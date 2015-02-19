@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         },
         files: [ {
           cwd: 'src/',
-          src: ['index.jade'],
+          src: ['index.jade', 'companies/index.jade'],
           dest: 'dist',
           expand: true,
           ext: '.html'
@@ -75,7 +75,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('build', ['copy', 'stylus', 'jade']);
+  grunt.registerTask('build',   ['copy', 'stylus', 'jade']);
   grunt.registerTask('publish', ['build', 'gh-pages']);
   grunt.registerTask('default', ['build', 'watch']);
 };
