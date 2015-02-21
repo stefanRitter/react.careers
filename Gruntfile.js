@@ -24,7 +24,14 @@ module.exports = function (grunt) {
       compile: {
         options: {
           client: false,
-          pretty: false
+          pretty: false,
+          data: function (dest, src) {
+            var companies = require('fs').readFileSync(
+              __dirname+'/src/companies.json',
+              {encoding: 'utf-8'}
+            );
+            return { companies: JSON.parse(companies) }
+          }
         },
         files: [ {
           cwd: 'src/',

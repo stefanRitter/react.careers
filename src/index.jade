@@ -1,12 +1,26 @@
 doctype
 html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
+  
   head(prefix="og: http://ogp.me/ns#")
     include _meta.jade
     include _css.jade
+  
   body
-    h1 Companies using React.js
-
-    each image, title in {bbc: '/bbc.png', conversocial: '/conversocial.png', facebook: '/facebook.png', flipboard: '/flipboard.png', instagram: '/instagram.png', 'kahn-academy': '/kahn-academy.png', netflix: '/netflix.png', nyt: '/nyt.png', 'red-badger': '/red-badger.jpg', salesforce: '/salesforce.png', tesco: '/tesco.png', twitter: '/twitter.png', yahoo: '/yahoo.png'}
-      img(src=image alt=title)
     
+    h1 
+      img(src="/react-logo.png" alt="React.js")
+      | React.careers
+
+    section
+      h2 Find the jobs working favourite framework: React.js
+
+    section
+      h2 Companies already using React.js:
+      
+      .button.red Add a company
+
+      each data, title in companies
+        .company
+          img(src=data.logo alt=title)
+
     include _scripts.jade

@@ -1,0 +1,55 @@
+{
+  "BBC": {
+    "url": "/careers",
+    "logo": "/bbc.png"
+  },
+  "Conversocial": {
+    "url": "/careers",
+    "logo": "/conversocial.png"
+  },
+  "Facebook": {
+    "url": "/careers",
+    "logo": "/facebook.png"
+  },
+  "Flipboard": {
+    "url": "/careers",
+    "logo": "/flipboard.png"
+  },
+  "Instagram": {
+    "url": "/careers",
+    "logo": "/instagram.png"
+  },
+  "Kahn Academy": {
+    "url": "/careers",
+    "logo": "/kahn-academy.png"
+  },
+  "netflix": {
+    "url": "/careers",
+    "logo": "/netflix.png"
+  },
+  "NewYorkTimes": {
+    "url": "/careers",
+    "logo": "/nyt.png"
+  },
+  "Red Badger": {
+    "url": "/careers",
+    "logo": "/red-badger.jpg"
+  },
+  "Salesforce": {
+    "url": "/careers",
+    "logo": "/salesforce.png"
+  },
+  "Tesco": {
+    "url": "/careers",
+    "logo": "/tesco.png"
+  },
+  "Twitter": {
+    "url": "/careers",
+    "logo": "/twitter.png"
+  },
+  "Yahoo": {
+    "url": "/careers",
+    "logo": "/yahoo.png"
+  }
+}
+        
