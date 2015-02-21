@@ -22,20 +22,7 @@ h1, h2
   font-weight 400
 
 h1
-  color blue
-  background gray
-  margin-top 0
   font-size 3em
-  padding 1em 0.5em 0.5em
-  vertical-align middle
-  img
-    vertical-align middle
-    height 2em
-  @media phone
-    em
-      font-size .7em
-      position relative
-      top -0.5em
 
 h2
   font-size 2em
@@ -51,8 +38,35 @@ section
   @media phone
     display block !important
 
+.clear-both
+  clear both
+  padding-top 2em
+
 
 // components
+.title
+  color blue
+  background gray
+  margin-top 0
+  padding 1em 0.5em 0.5em
+  vertical-align middle
+  img
+    vertical-align middle
+    height 2em
+  @media phone
+    em
+      font-size .7em
+      position relative
+      top -0.5em
+      
+.button
+  padding 10px 20px
+  background blue
+  color White
+  text-decoration none
+  font-weight bold
+  border-radius 5px
+
 .company
   float left
   width 30%
@@ -66,3 +80,14 @@ section
     border-bottom 2px solid blue
   img
     width 100%
+
+#addcompany
+  clear both
+  padding 2em 2em 4em 2em
+  background gray
+  color White
+  a
+    color blue
+    font-weight bold
+    text-decoration none
+    border-bottom 2px solid blue

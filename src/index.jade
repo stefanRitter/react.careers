@@ -7,7 +7,7 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
   
   body
     
-    h1 
+    h1.title
       img(src="/react-logo.png" alt="React.js")
       br.phone-only
       | React
@@ -15,16 +15,31 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       em .careers
 
     section
-      h2 Find jobs working with your favourite framework: React.js
+      h2 Find jobs where you can work with your favourite framework React.js
 
     section
-      h2 Companies already using React.js:
+      h1 Companies using React.js
       
-      .button.red Add a company
-
+      a.button.red(href="#addcompany") Add a company
+      
+      .clear-both
       each data, title in companies
         a.company(href=data.url target="_blank")
           img(src=data.logo alt=title)
           span= "Search for React.js jobs at " + title
+      .clear-both
+
+    #addcompany
+      h2 Add a company
+      | Email company name, 500x500px logo, and careers url to 
+      a(href="mailto:admin@react.careers") admin@react.careers
+      br
+      br
+      em or
+      br
+      br
+      | Create a pull request on 
+      a(href="") github
+
 
     include _scripts.jade
