@@ -9,10 +9,11 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
     
     h1 
       img(src="/react-logo.png" alt="React.js")
-      | React.careers
+      | React
+      em .careers
 
     section
-      h2 Find the jobs working favourite framework: React.js
+      h2 Find jobs working with your favourite framework: React.js
 
     section
       h2 Companies already using React.js:
@@ -22,5 +23,6 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       each data, title in companies
         .company
           img(src=data.logo alt=title)
+          a(href=data.url)= "Search for React.js jobs at " + title
 
     include _scripts.jade

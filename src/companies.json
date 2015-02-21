@@ -1,34 +1,34 @@
 {
   "BBC": {
-    "url": "/careers",
+    "url": "http://www.bbc.co.uk/careers/home",
     "logo": "/bbc.png"
   },
   "Conversocial": {
-    "url": "/careers",
+    "url": "http://www.conversocial.com/about-us/jobs",
     "logo": "/conversocial.png"
   },
   "Facebook": {
-    "url": "/careers",
+    "url": "https://www.facebook.com/careers/",
     "logo": "/facebook.png"
   },
   "Flipboard": {
-    "url": "/careers",
+    "url": "https://flipboard.com/careers/",
     "logo": "/flipboard.png"
   },
   "Instagram": {
-    "url": "/careers",
+    "url": "https://instagram.com/about/jobs/",
     "logo": "/instagram.png"
   },
   "Kahn Academy": {
-    "url": "/careers",
+    "url": "https://www.khanacademy.org/careers",
     "logo": "/kahn-academy.png"
   },
   "netflix": {
-    "url": "/careers",
+    "url": "http://jobs.netflix.com/",
     "logo": "/netflix.png"
   },
   "NewYorkTimes": {
-    "url": "/careers",
+    "url": "http://jobs.nytco.com/",
     "logo": "/nyt.png"
   },
   "Red Badger": {
@@ -36,19 +36,19 @@
     "logo": "/red-badger.jpg"
   },
   "Salesforce": {
-    "url": "/careers",
+    "url": "http://www.salesforce.com/company/careers/",
     "logo": "/salesforce.png"
   },
   "Tesco": {
-    "url": "/careers",
+    "url": "http://www.tesco-careers.com/",
     "logo": "/tesco.png"
   },
   "Twitter": {
-    "url": "/careers",
+    "url": "https://about.twitter.com/careers",
     "logo": "/twitter.png"
   },
   "Yahoo": {
-    "url": "/careers",
+    "url": "https://careers.yahoo.com",
     "logo": "/yahoo.png"
   }
 }
