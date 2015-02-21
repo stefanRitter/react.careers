@@ -1,7 +1,7 @@
 - var url         = "http://react.careers"
 - var name        = "React.careers"
 - var title       = "React Jobs and Careers"
-- var logo_url    = "http://react.careers/logo.png"
+- var logoUrl     = "http://react.careers/logo.png"
 - var description = "Job board for the coolest start-ups, businesses, and organizations for the best React developers. The jobs and careers for top ReactJS talent."
 
 meta(charset="utf-8")
@@ -15,7 +15,7 @@ meta(property="og:type"         content="website")
 meta(property="og:title"        content=title)
 meta(property="og:site_name"    content=name)
 meta(property="og:url"          content=url)
-meta(property="og:image"        content=logo_url)
+meta(property="og:image"        content=logoUrl)
 meta(property="og:description"  content=description)
 
 //- schema.org
@@ -23,12 +23,18 @@ meta(property="og:type"         content="website")
 meta(property="og:url"          content=url)
 meta(property="og:title"        content=title)
 meta(property="og:description"  content=description)
-meta(property="og:image"        content=logo_url)
+meta(property="og:image"        content=logoUrl)
 meta(property="og:site_name"    content=name)
 
 //- twitter card
+meta(name="twitter:card"        content="summary_large_image")
+meta(name="twitter:site"        content="@reactcareers")
+meta(name="twitter:creator"     content="@stefanritter")
+meta(name="twitter:title"       content=title)
+meta(name="twitter:description" content=description)
+meta(name="twitter:image:src"   content=logoUrl)
 
-
+//- links
 link(rel="shortcut icon" href="/favicon.ico")
 link(rel="apple-touch-icon" href="/logo.png")
 link(rel="canonical" href=url)
