@@ -1,6 +1,17 @@
+// breakpoints
+iphone     = "(max-width:320px)"
+phone      = "(max-width:460px)"
+phablet    = "(max-width:768px)"
+tablet     = "(max-width:980px)"
+typeheight = "(max-height:375px)"
+
+
+// colors
 blue  = #61DAFB
 gray  = #222222
 
+
+// general
 body, html
   margin 0
   font-size 18px
@@ -14,23 +25,32 @@ h1
   color blue
   background gray
   margin-top 0
-  font-size 64px
+  font-size 3em
   padding 1em 0.5em 0.5em
   vertical-align middle
   img
     vertical-align middle
     height 2em
-    
 
 h2
-  font-size 32px
+  font-size 2em
 
 section
   margin auto
   max-width 1200px
 
+
+// components
 .company
-  pull left
-  width 33%
+  float left
+  width 30%
+  margin 1.5%
   img
     width 100%
+  a
+    color blue
+    margin-top 1em
+    display inline-block
+    font-weight bold
+    text-decoration none
+    border-bottom 2px solid blue
