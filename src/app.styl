@@ -31,6 +31,11 @@ h1
   img
     vertical-align middle
     height 2em
+  @media phone
+    em
+      font-size .7em
+      position relative
+      top -0.5em
 
 h2
   font-size 2em
@@ -38,6 +43,13 @@ h2
 section
   margin auto
   max-width 1200px
+
+
+// responsive
+.phone-only
+  display none
+  @media phone
+    display block !important
 
 
 // components
