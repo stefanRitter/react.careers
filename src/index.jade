@@ -4,6 +4,9 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
     include _meta.jade
     include _css.jade
   body
-    | coming soon
+    h1 Companies using React.js
+
+    each image, title in {bbc: '/bbc.png', conversocial: '/conversocial.png', facebook: '/facebook.png', flipboard: '/flipboard.png', instagram: '/instagram.png', 'kahn-academy': '/kahn-academy.png', netflix: '/netflix.png', nyt: '/nyt.png', 'red-badger': '/red-badger.jpg', salesforce: '/salesforce.png', tesco: '/tesco.png', twitter: '/twitter.png', yahoo: '/yahoo.png'}
+      img(src=image alt=title)
     
     include _scripts.jade
