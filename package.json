@@ -11,7 +11,7 @@
     "url": "git://github.com/stefanRitter/react.careers.git"
   },
   "author": "stefanRitter",
-  "license": "private",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stefanRitter/react.careers/issues"
   },
