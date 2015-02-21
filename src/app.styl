@@ -12,7 +12,8 @@ gray  = #222222
 
 
 // general
-body, html
+body
+html
   margin 0
   font-family 'Raleway', Helvetica, Arial, sans-serif
   text-align center
@@ -20,15 +21,20 @@ body, html
   @media tablet
     font-size 14px
 
-h1, h2
+h1
+h2
   font-weight 400
 
 h1
   font-size 3em
 
 h2
-  font-size 2em
+  font-size 1.5em
   padding 0 0.3em
+
+h3
+  font-size 1.3em
+  margin 0
 
 section
   margin auto
@@ -51,24 +57,62 @@ section
   color blue
   background gray
   margin-top 0
-  padding 1em 0.5em 0.5em
-  vertical-align middle
-  img
+  h2
+    padding-bottom 2em
+    margin 0
+  h1
+    margin 0
+    padding 1em 0.5em
     vertical-align middle
+    img
+      vertical-align middle
+      height 2em
+    @media phone
+      em
+        font-size .7em
+        position relative
+        top -0.5em
+
+.alerts-form
+  background LightGray
+  padding 3em 15px 4em
+  label, input
+    display block
+    min-width 300px
+    max-width 500px
+    margin 0 10px
+  label
+    font-weight bold
+    margin-top 1em
+  input
+    border 0
+    border-bottom 2px solid Black
     height 2em
-  @media phone
-    em
-      font-size .7em
-      position relative
-      top -0.5em
-      
+    font-size 1.2em
+
+.form-group
+  display inline-block
+  text-align left
+
+.form-button
 .button
+  appearance none
+  border 0
   padding 10px 20px
   background blue
   color White
   text-decoration none
+  font-size 1em
   font-weight bold
   border-radius 5px
+  text-transform uppercase
+  letter-spacing 1px
+
+.form-button
+  padding 0
+  margin 0 10px
+  height 2.5em
+  width 100%
 
 .company
   float left
