@@ -14,8 +14,10 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       br.phone-only
       em .careers
 
+
     section
       h2 Find jobs where you can work with your favourite framework React.js
+
 
     section
       h1 Companies using React.js
@@ -26,8 +28,12 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       each data, title in companies
         a.company(href=data.url target="_blank")
           img(src=data.logo alt=title)
-          span= "Search for React.js jobs at " + title
+          span
+            | Search for React.js jobs at
+            br
+            = title
       .clear-both
+
 
     #addcompany
       h2 Add a company

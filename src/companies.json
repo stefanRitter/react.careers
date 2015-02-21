@@ -23,17 +23,17 @@
     "url": "https://www.khanacademy.org/careers",
     "logo": "/kahn-academy.png"
   },
-  "netflix": {
+  "Netflix": {
     "url": "http://jobs.netflix.com/",
     "logo": "/netflix.png"
   },
-  "NewYorkTimes": {
+  "The NYTimes": {
     "url": "http://jobs.nytco.com/",
     "logo": "/nyt.png"
   },
   "Red Badger": {
-    "url": "/careers",
-    "logo": "/red-badger.jpg"
+    "url": "http://red-badger.com/about-us/join-us/",
+    "logo": "/red-badger.png"
   },
   "Salesforce": {
     "url": "http://www.salesforce.com/company/careers/",

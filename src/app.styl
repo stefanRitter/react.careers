@@ -14,9 +14,11 @@ gray  = #222222
 // general
 body, html
   margin 0
-  font-size 18px
   font-family 'Raleway', Helvetica, Arial, sans-serif
   text-align center
+  font-size 18px
+  @media tablet
+    font-size 14px
 
 h1, h2
   font-weight 400
@@ -26,6 +28,7 @@ h1
 
 h2
   font-size 2em
+  padding 0 0.3em
 
 section
   margin auto
@@ -69,21 +72,39 @@ section
 
 .company
   float left
-  width 30%
-  margin 1.5%
+  width 22%
+  margin 1em 1.5%
   text-decoration none
   span
     display inline-block
-    margin-top 1em
-    color blue
-    font-weight bold
-    border-bottom 2px solid blue
+    margin-top 0.5em
+    color gray
+    -webkit-transition all 0.3s
+    -moz-transition all 0.3s
+    transition all 0.3s
   img
     width 100%
+    -webkit-filter grayscale(100%)
+    -moz-filter grayscale(100%)
+    filter grayscale(100%)
+    -webkit-transition all 0.3s
+    -moz-transition all 0.3s
+    transition all 0.3s
+  &:hover
+    img
+      -webkit-filter grayscale(0)
+      -moz-filter grayscale(0)
+      filter grayscale(0)
+    span
+      color blue
+  @media tablet
+    width 30%
+  @media phone
+    width 47%
 
 #addcompany
   clear both
-  padding 2em 2em 4em 2em
+  padding 2em 2em 8em 2em
   background gray
   color White
   a
