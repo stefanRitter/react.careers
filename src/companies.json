@@ -39,10 +39,6 @@
     "url": "http://www.procore.com/jobs/",
     "logo": "/procore.png"
   },
-  "The NYTimes": {
-    "url": "http://jobs.nytco.com/",
-    "logo": "/nyt.png"
-  },
   "Red Badger": {
     "url": "http://red-badger.com/about-us/join-us/",
     "logo": "/red-badger.png"
@@ -54,6 +50,10 @@
   "Tesco": {
     "url": "http://www.tesco-careers.com/",
     "logo": "/tesco.png"
+  },
+  "The NYTimes": {
+    "url": "http://jobs.nytco.com/",
+    "logo": "/nyt.png"
   },
   "Twitter": {
     "url": "https://about.twitter.com/careers",
