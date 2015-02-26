@@ -35,6 +35,10 @@
     "url": "http://jobs.netflix.com/",
     "logo": "/netflix.png"
   },
+  "Procore": {
+    "url": "http://www.procore.com/jobs/",
+    "logo": "/procore.png"
+  },
   "The NYTimes": {
     "url": "http://jobs.nytco.com/",
     "logo": "/nyt.png"
