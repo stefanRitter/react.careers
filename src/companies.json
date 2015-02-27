@@ -62,6 +62,10 @@
   "Yahoo": {
     "url": "https://careers.yahoo.com",
     "logo": "/yahoo.png"
+  },
+  "Zapier": {
+    "url": "https://zapier.com/jobs/",
+    "logo": "/zapier.png"
   }
 }
         
