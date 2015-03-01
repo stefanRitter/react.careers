@@ -61,10 +61,14 @@ section
     padding-bottom 2em
     margin 0
     line-height 1.5
+    @media phone
+      font-size 1em
   h1
     margin 0
     padding 1em 0.5em
     vertical-align middle
+    @media phone
+      padding 0.5em 0 0 0
     img
       vertical-align middle
       height 2em
@@ -162,6 +166,16 @@ section
   float none
   display block
   margin auto
+  width 100%
+  img
+    width 100%
+    max-width 212px
+    -webkit-filter grayscale(0)
+    -moz-filter grayscale(0)
+    filter grayscale(0)
+  .button
+    display inline-block
+    margin-top 0.5em
 
 #addcompany
   clear both

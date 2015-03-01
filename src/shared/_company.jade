@@ -1,3 +1,4 @@
+- var url         = "http://react.careers/companies/"+company.toLowerCase().replace(/ /g,"-")+".html"
 - var title       = company+" on React.careers - Open source directory of companies using React.js"
 - var description = company+" on React.careers - The open source directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js"
 
@@ -18,6 +19,7 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       - var data = companies[company]
       a.company.stand-alone(href=data.url target="_blank")
         img(src=data.logo alt=company)
+        br
         .button(href="#addcompany")
           | Find React.js jobs at 
           = company
