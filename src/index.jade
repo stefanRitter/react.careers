@@ -22,7 +22,7 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       .clear-both
       each data, title in companies
         - var href="/companies/"+title+".html"
-        a.company(href=href target="_blank")
+        a.company(href=href)
           img(src=data.logo alt=title)
           span
             | Search for React.js jobs at
