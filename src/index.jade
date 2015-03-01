@@ -1,7 +1,5 @@
 - var url         = "http://react.careers"
-- var name        = "React.careers"
 - var title       = "Open source directory of companies using React.js"
-- var logoUrl     = "http://react.careers/logo.png"
 - var description = "The open source directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js"
 
 doctype
@@ -12,11 +10,14 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
   
   body
     include shared/_title.jade
+    include shared/_alerts.jade
+    
+    .clear-both
 
     section
       h1 Companies using React.js
       
-      a.button.red(href="#addcompany") Add a company
+      a.button(href="#addcompany") Add a company
       
       .clear-both
       each data, title in companies

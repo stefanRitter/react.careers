@@ -1,0 +1,27 @@
+- var title       = company+" on React.careers - Open source directory of companies using React.js"
+- var description = company+" on React.careers - The open source directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js"
+
+doctype
+html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
+  
+  head(prefix="og: http://ogp.me/ns#")
+    include _meta.jade
+  
+  body
+    include _title.jade
+
+    section
+      h1
+        = company
+        |  is using React.js
+      
+      - var data = companies[company]
+      a.company.stand-alone(href=data.url target="_blank")
+        img(src=data.logo alt=company)
+        .button(href="#addcompany")
+          | Find React.js jobs at 
+          = company
+      .clear-both
+    
+    include _alerts.jade
+    include _scripts.jade
