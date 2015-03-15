@@ -1,4 +1,9 @@
 {
+  "Airbnb": {
+    "url": "https://www.airbnb.co.uk/careers",
+    "moreinfo": "http://www.slideshare.net/spikebrehm/the-evolution-of-airbnbs-frontend",
+    "logo": "/airbnb.png"
+  },
   "BBC": {
     "url": "http://www.bbc.co.uk/careers/home",
     "logo": "/bbc.png"
