@@ -56,6 +56,10 @@
     "url": "http://www.salesforce.com/company/careers/",
     "logo": "/salesforce.png"
   },
+  "State": {
+    "url": "http://jobs.state.com/",
+    "logo": "/state.png"
+  },
   "Tesco": {
     "url": "http://www.tesco-careers.com/",
     "logo": "/tesco.png"
