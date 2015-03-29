@@ -44,6 +44,10 @@
     "url": "http://www.procore.com/jobs/",
     "logo": "/procore.png"
   },
+  "Reddit": {
+    "url": "https://jobs.lever.co/reddit",
+    "logo": "/reddit.png"
+  },
   "Red Badger": {
     "url": "http://red-badger.com/about-us/join-us/",
     "logo": "/red-badger.png"
