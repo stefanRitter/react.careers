@@ -16,6 +16,10 @@
     "url": "http://www.conversocial.com/about-us/jobs",
     "logo": "/conversocial.png"
   },
+  "eBay": {
+    "url": "https://careers.ebayinc.com",
+    "logo": "/ebay.png"
+  },
   "Facebook": {
     "url": "https://www.facebook.com/careers/",
     "logo": "/facebook.png"
@@ -43,6 +47,10 @@
   "Netflix": {
     "url": "http://jobs.netflix.com/",
     "logo": "/netflix.png"
+  },
+  "PayPal": {
+    "url": "https://www.paypal.com/ph/cgi-bin/webscr?cmd=p/gen/jobs-outside",
+    "logo": "/paypal.png"
   },
   "Procore": {
     "url": "http://www.procore.com/jobs/",
@@ -85,4 +93,3 @@
     "logo": "/zapier.png"
   }
 }
-        
