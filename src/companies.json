@@ -80,6 +80,10 @@
     "url": "http://www.salesforce.com/company/careers/",
     "logo": "/salesforce.png"
   },
+  "Sky": {
+    "url": "http://searchskyjobs.com/careers/software-and-product-development-jobs/",
+    "logo": "/sky.png"
+  },
   "State": {
     "url": "http://jobs.state.com/",
     "logo": "/state.png"
