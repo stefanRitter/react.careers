@@ -16,6 +16,10 @@
     "url": "http://www.conversocial.com/about-us/jobs",
     "logo": "/conversocial.png"
   },
+  "Discovery": {
+    "url": "https://careers-discovery.icims.com/jobs/13575/front-end-engineer/job",
+    "logo": "/discovery.png"
+  },
   "eBay": {
     "url": "https://careers.ebayinc.com",
     "logo": "/ebay.png"
