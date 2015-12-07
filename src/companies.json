@@ -72,6 +72,10 @@
     "url": "http://jobs.netflix.com/",
     "logo": "/netflix.png"
   },
+  "Nitrous": {
+    "url": "https://www.nitrous.io/jobs/",
+    "logo": "/nitrous.png"
+  },
   "PayPal": {
     "url": "https://www.paypal.com/ph/cgi-bin/webscr?cmd=p/gen/jobs-outside",
     "logo": "/paypal.png"
