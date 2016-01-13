@@ -132,6 +132,10 @@
     "url": "https://careers.yahoo.com",
     "logo": "/yahoo.png"
   },
+  "Qubit": {
+    "url": "http://www.qubit.com/careers",
+    "logo": "/qubit.png"
+},
   "Zapier": {
     "url": "https://zapier.com/jobs/",
     "logo": "/zapier.png"
