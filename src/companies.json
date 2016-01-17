@@ -84,6 +84,10 @@
     "url": "https://www.paypal.com/ph/cgi-bin/webscr?cmd=p/gen/jobs-outside",
     "logo": "/paypal.png"
   },
+  "Prempoint": {
+    "url": "https://www.prempoint.com",
+    "logo": "/prempoint.png"
+  },
   "Procore": {
     "url": "http://www.procore.com/jobs/",
     "logo": "/procore.png"
@@ -147,7 +151,7 @@
   "Qubit": {
     "url": "http://www.qubit.com/careers",
     "logo": "/qubit.png"
-},
+  },
   "Zapier": {
     "url": "https://zapier.com/jobs/",
     "logo": "/zapier.png"
