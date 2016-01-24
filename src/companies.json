@@ -155,5 +155,9 @@
   "Zapier": {
     "url": "https://zapier.com/jobs/",
     "logo": "/zapier.png"
+  },
+  "Sticker Mule": {
+    "url": "https://www.stickermule.com/jobs",
+    "logo": "/sticker-mule.png"
   }
 }
