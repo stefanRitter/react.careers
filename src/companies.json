@@ -8,6 +8,10 @@
     "url": "http://www.bbc.co.uk/careers/home",
     "logo": "/bbc.png"
   },
+  "Bolste": {
+    "url": "http://careers.bolste.com",
+    "logo": "/bolste.png"
+  },
   "Codecademy": {
     "url": "http://www.codecademy.com/about/jobs",
     "logo": "/codecademy.png"
