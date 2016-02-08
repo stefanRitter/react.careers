@@ -67,6 +67,11 @@ module.exports = function (grunt) {
             flatten: false,
             src: [
               'blog/**/*.html',
+              'blog/**/*.jpg',
+              'blog/**/*.png',
+              'blog/**/*.gif',
+              'blog/**/*.css',
+              'blog/**/*.pdf',
               ],
             dest: 'dist/',
             filter: 'isFile'}
