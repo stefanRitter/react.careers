@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+
+      Building a chat app with @flightjs Part 1 - Boarding Yeoman, Bower, Grunt (or Gulp), and Hogan &middot; React.careers
+
+  </title>
+
+  <link rel="stylesheet" href="/blog/assets/css/styles.css">
+  <link rel="stylesheet" href="/blog/assets/css/poole.css">
+
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- Syntax highlighting -->
+  <style>
+    .highlight { margin-bottom: 1rem; border-radius: 4px; }
+    .highlight pre { margin-bottom: 0; }
+    .highlight .hll { background-color: #ffc; }
+    .highlight .c { color: #999; } /* Comment */
+    .highlight .err { color: #a00; background-color: #faa } /* Error */
+    .highlight .k { color: #069; } /* Keyword */
+    .highlight .o { color: #555 } /* Operator */
+    .highlight .cm { color: #09f; font-style: italic } /* Comment.Multiline */
+    .highlight .cp { color: #099 } /* Comment.Preproc */
+    .highlight .c1 { color: #999; } /* Comment.Single */
+    .highlight .cs { color: #999; } /* Comment.Special */
+    .highlight .gd { background-color: #fcc; border: 1px solid #c00 } /* Generic.Deleted */
+    .highlight .ge { font-style: italic } /* Generic.Emph */
+    .highlight .gr { color: #f00 } /* Generic.Error */
+    .highlight .gh { color: #030; } /* Generic.Heading */
+    .highlight .gi { background-color: #cfc; border: 1px solid #0c0 } /* Generic.Inserted */
+    .highlight .go { color: #aaa } /* Generic.Output */
+    .highlight .gp { color: #009; } /* Generic.Prompt */
+    .highlight .gs { } /* Generic.Strong */
+    .highlight .gu { color: #030; } /* Generic.Subheading */
+    .highlight .gt { color: #9c6 } /* Generic.Traceback */
+    .highlight .kc { color: #069; } /* Keyword.Constant */
+    .highlight .kd { color: #069; } /* Keyword.Declaration */
+    .highlight .kn { color: #069; } /* Keyword.Namespace */
+    .highlight .kp { color: #069 } /* Keyword.Pseudo */
+    .highlight .kr { color: #069; } /* Keyword.Reserved */
+    .highlight .kt { color: #078; } /* Keyword.Type */
+    .highlight .m { color: #f60 } /* Literal.Number */
+    .highlight .s { color: #d44950 } /* Literal.String */
+    .highlight .na { color: #4f9fcf } /* Name.Attribute */
+    .highlight .nb { color: #366 } /* Name.Builtin */
+    .highlight .nc { color: #0a8; } /* Name.Class */
+    .highlight .no { color: #360 } /* Name.Constant */
+    .highlight .nd { color: #99f } /* Name.Decorator */
+    .highlight .ni { color: #999; } /* Name.Entity */
+    .highlight .ne { color: #c00; } /* Name.Exception */
+    .highlight .nf { color: #c0f } /* Name.Function */
+    .highlight .nl { color: #99f } /* Name.Label */
+    .highlight .nn { color: #0cf; } /* Name.Namespace */
+    .highlight .nt { color: #2f6f9f; } /* Name.Tag */
+    .highlight .nv { color: #033 } /* Name.Variable */
+    .highlight .ow { color: #000; } /* Operator.Word */
+    .highlight .w { color: #bbb } /* Text.Whitespace */
+    .highlight .mf { color: #f60 } /* Literal.Number.Float */
+    .highlight .mh { color: #f60 } /* Literal.Number.Hex */
+    .highlight .mi { color: #f60 } /* Literal.Number.Integer */
+    .highlight .mo { color: #f60 } /* Literal.Number.Oct */
+    .highlight .sb { color: #c30 } /* Literal.String.Backtick */
+    .highlight .sc { color: #c30 } /* Literal.String.Char */
+    .highlight .sd { color: #c30; font-style: italic } /* Literal.String.Doc */
+    .highlight .s2 { color: #c30 } /* Literal.String.Double */
+    .highlight .se { color: #c30; } /* Literal.String.Escape */
+    .highlight .sh { color: #c30 } /* Literal.String.Heredoc */
+    .highlight .si { color: #a00 } /* Literal.String.Interpol */
+    .highlight .sx { color: #c30 } /* Literal.String.Other */
+    .highlight .sr { color: #3aa } /* Literal.String.Regex */
+    .highlight .s1 { color: #c30 } /* Literal.String.Single */
+    .highlight .ss { color: #fc3 } /* Literal.String.Symbol */
+    .highlight .bp { color: #366 } /* Name.Builtin.Pseudo */
+    .highlight .vc { color: #033 } /* Name.Variable.Class */
+    .highlight .vg { color: #033 } /* Name.Variable.Global */
+    .highlight .vi { color: #033 } /* Name.Variable.Instance */
+    .highlight .il { color: #f60 } /* Literal.Number.Integer.Long */
+    .css .o,
+    .css .o + .nt,
+    .css .nt + .nt { color: #999; }
+  </style>
+</head>
+
+
+  <body>
+
+    <main class="container">
+      <header class="header">
+  <h3 class="header-title">
+    <a href="/" title="Home">React.careers</a>
+    <small>Blogging on React & JavaScript</small>
+  </h3>
+</header>
+<!--<a href="/" class="hellobar">
+  <span class="underline">Check out my Front-end Programming Masterclass.</span>
+</a>-->
+<div class="header-spacer">&nbsp;</div>
+
+
+<article class="post">
+  <h1>Building a chat app with @flightjs Part 1 - Boarding Yeoman, Bower, Grunt (or Gulp), and Hogan</h1>
+  <p><time datetime="2014-04-04T00:00:00+00:00" class="page-date">04 Apr 2014</time></p>
+  <p>This is the first post in a series on building a beautifully simple chat app with Flight.</p>
+
+<p>The app will have 3 main views:</p>
+
+<p><img src="/blog/assets/img/flightjs1.png" alt="login view" style="width:100%;max-width:500px;" />
+login view</p>
+
+<p><img src="/blog/assets/img/flightjs2.png" alt="conversation view" style="width:100%;max-width:500px;" />
+conversations view (wait 3 seconds for the server to ping you)</p>
+
+<p><img src="/blog/assets/img/flightjs3.png" alt="chat view" style="width:100%;max-width:500px;" />
+chat view</p>
+
+<p>Check out my previous story to <a href="https://medium.com/@stefanritter/a-flight-js-hello-world-97fc4ae3072d">get started with Flight</a>. In these posts we will take Flight one extra passenger at a time. At the end of this tutorial I hope to have talked you through how to create this application with reusable Flight components on the front-end.</p>
+
+<p>The full source code to the app we are going to write can be found here: <a href="https://github.com/stefanRitter/flight-chat">https://github.com/stefanRitter/flight-chat</a></p>
+
+<p>And make sure to check out the app running away happily on Heroku:
+<a href="http://flight-chat.herokuapp.com/">http://flight-chat.herokuapp.com/</a></p>
+
+<p>I won’t talk you through each line of code (and I’ll mostly ignore the backend too), instead I’ll talk you through just enough exemplary pieces of the application, so you can easily piece together the rest.</p>
+
+<p>Here’s an overview of what we’ll discuss:</p>
+
+<p>Part 1:</p>
+
+<ul>
+  <li>setting up the workflow with <strong><em>Yeoman, Bower &amp; Grunt</em></strong></li>
+  <li>using <strong><em>Hogan</em></strong> to precompile and render templates</li>
+</ul>
+
+<p><a href="/flightjs-part-2">Part 2</a>:</p>
+
+<ul>
+  <li>writing components with <strong><em>RequireJS</em></strong></li>
+  <li>testing components with <strong><em>Karma &amp; Jasmine</em></strong></li>
+</ul>
+
+<p><a href="/flightjs-part-3">Part 3</a>:</p>
+
+<ul>
+  <li>writing<strong>_ data components_</strong></li>
+  <li><em><strong>spying on jQuery.ajax</strong>__ <strong>promises</strong></em> to test data components</li>
+</ul>
+
+<h2 id="bower-gruntgulp-amp-yeoman">Bower, Grunt/Gulp, &amp; Yeoman</h2>
+
+<p>First let’s set up our productivity &amp; workflow tools: Bower, Grunt and Yeoman. You’re going to need node &amp; npm installed for this, so make sure to visit <a href="http://nodejs.org/">nodejs.org</a> and follow their installation instructions, if you haven’t got it yet. You will need super user (sudo) rights if you haven’t configured your permissions/directories (<a href="http://stackoverflow.com/questions/18212175/npm-yo-keeps-asking-for-sudo-permission">checkout this article for more on that</a> and <a href="https://github.com/npm/npm/issues/3139">this discussion if you’re on OSX</a>).</p>
+
+<pre>npm install -g grunt-cli bower yo</pre>
+
+<p><strong><em>Bower</em></strong> is to front-end what npm is to Node and bundler is to Rails: It let’s you easily install, manage, and upgrade your front-end dependencies.</p>
+
+<p><strong><em>Grunt</em></strong> is a javascript task runner, similar to what rake is for Rails. Grunt will do whatever you want it to do, but usually you’ll use it to run your tests, minify and lint your javascript, and precompile any of your app’s assets. Similar to Grunt, <a href="http://gulpjs.com/"><strong><em>Gulp</em></strong></a> is a tool getting really popular recently, it utilizes Node’s streaming capabilities and has stricter plugin guidelines and rules than Grunt. The flight generator comes with Gulp out of the box, but I setup this tutorial in Grunt originally, so I decided to stick to Grunt for now. The repo has Grunt and Gulp setup, so you can choose which one to use. It won’t be complicated to make the switch once you’re familiar with one of them. If you want to know more about Gulp, check out <a href="http://javascriptjabber.com/097-jsj-gulp-js-with-eric-schoffstall/">this great podcast on Gulp, Grunt and Node streams.</a> I also wrote a <a href="http://blog.stefanritter.com/post/81871236665/switching-from-grunt-to-gulp">post on switching</a>.</p>
+
+<p>Again if you’ve used Rails, you know it comes with a handy generator for anything from controllers to models, and database migrations. <strong><em>Yeoman</em></strong> brings this same convenience to Javascript based apps.</p>
+
+<p>To create a new app, I usually start with a Yeoman generator and then customise it from there:</p>
+
+<pre>npm install -g generator-flight
+mkdir flight-chat &amp;&amp; cd $_
+yo flight flight-chat --skip-install</pre>
+
+<p>This will create our ‘flight-chat’ app in the flight-chat directory. Yeoman will ask you a few questions regarding Bootstrap and normalize.css, which in this case I negate, because I prefer to use my own styles using Sass with Compass. Notice the —skip-install flag on the last line, the flight generator uses Gulp as an alternative to Grunt so we’ll want to change the package.json a bit before running npm install.</p>
+
+<p><strong>Setting up Grunt</strong></p>
+
+<p>The first thing I want do is remove all Gulp dependencies from the newly created app, this includes the gulpfile.js file as well as the ‘gulp’ and ‘gulp-livereload’ entries in package.json. Then we can start adding Grunt, as well as a handful of Grunt tasks, which we’ll be using:</p>
+
+<pre>npm install grunt —save-dev
+npm install grunt-contrib-jshint **grunt-templates-hogan** grunt-contrib-compass grunt-contrib-watch --save-dev
+npm install load-grunt-tasks --save-dev</pre>
+
+<p>The final line installs a handy Grunt task loader, which we can use to load all our ‘grunt-’ modules at once, without having to specify them individually. Something you will appreciate once you’re in Gruntfile.js, which we will create next. </p>
+
+<p>Gruntfile.js is a configuration file you setup in the root directory of your app, where it can sit nicely next to package.json, and bower.json — all the configuration files created by the Yeoman generator when creating the app. You can lookup the Gruntfile.js for Flight-chat in the Github repo to see how all the tasks are configured. As an example, I’ll talk you through setting up the Hogan task — the other tasks all work similarly, so you’ll easily get the hang of it from following this one example.</p>
+
+<p>The Gruntfile.js is a Node module which gets required by Grunt when you execute a Grunt task from the command line. It exports one simple function into which Grunt injects itself through the grunt parameter:</p>
+
+<pre>module.exports = function(grunt) {
+  // 1. load grunt modules
+  // 2. configure tasks
+  // 3. register tasks
+};</pre>
+
+<p>A Gruntfile has three main sections, first you load all the Grunt modules, second you configure them, and finally third you register the main command line tasks you want Grunt to be able to execute.</p>
+
+<p>Loading the Grunt related modules is a very simple one for us because we’re using the previously installed load-grunt-tasks module;</p>
+
+<pre>// 1. load grunt modules
+require('load-grunt-tasks')(grunt);</pre>
+
+<p>I’ll talk about the configuration step in the next section. Let’s first have a look a the two tasks we’ll be using — defined in the end of the Gruntfile.js</p>
+
+<pre>// 3. register tasks
+grunt.registerTask('default', ['watch']);
+grunt.registerTask('build', ['jshint', 'compass', 'hogan']);</pre>
+
+<p>The default task will run whenever you evoke simply ‘grunt’ from the command line, we have set it up to call the ‘watch’ task which monitors our files for changes, calling the appropriate tasks for a registered change.
+The build behaviour we give Grunt will ask it to check our Javascript files with Jshint, compile our sass files with compass and finally generate our templates using Hogan.</p>
+
+<h2 id="templating-with-hogan"><strong>Templating</strong> with Hogan</h2>
+
+<p>A Hogan template looks just like HTML, except that all the dynamic content is marked in curly braces {{ — like so:</p>
+
+<pre>&lt;div class="chat-message-text"&gt;&#123;&#123;text&#125;&#125;&lt;/div&gt;</pre>
+
+<p>Our flight-chat app uses five rather simple templates - but if you want to know more about Hogan, including the more advanced features like loops and conditionals checkout the <a href="http://mustache.github.io/mustache.5.html">mustache docs</a>, which define the syntax Hogan follows.</p>
+
+<p>To add Hogan to our project simply install it with bower…</p>
+
+<pre>bower install hogan —save</pre>
+
+<p> … and then add it to to bottom of our app/index.html file:</p>
+
+<pre>&lt;!--[if lt IE 9]&gt;
+ &lt;script src="/bower_components/es5-shim/es5-shim.js"&gt;&lt;/script&gt;
+ &lt;script src="/bower_components/es5-shim/es5-sham.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script src="/socket.io/socket.io.js"&gt;&lt;/script&gt;
+&lt;script src="/bower_components/jquery/dist/jquery.js"&gt;&lt;/script&gt;
+**&lt;script src="/bower_components/hogan/web/builds/2.0.0/hogan-2.0.0.min.js"&gt;&lt;/script&gt;**
+&lt;script src="/bower_components/requirejs/require.js" data-main="js/main.js"&gt;&lt;/script&gt;</pre>
+
+<p>There are two steps involved when using templates: Templates first have to get compiled, this is when Hogan converts them from HTML text into a Javascript function.
+And then in the second step we use this compiled version of the template in order to render it to the page with Flight.</p>
+
+<p>We’ve already installed the Grunt task which we’ll use to compile our templates as part of our build process, so let’s configure it in Gruntfile.js:</p>
+
+<pre>// 2. configure tasks
+grunt.initConfig({
+ yeoman: {
+  app: 'app',
+  dist: 'dist'
+ },
+ pkg: grunt.file.readJSON('package.json'),</pre>
+<pre> hogan: {
+  publish: {
+   options: {
+     prettify: true,
+     amdWrapper: true
+   },
+   files:{
+    '&lt;%= yeoman.app %&gt;/js/templates.js': ['templates/**/*.html']
+    }
+   }
+  }
+});</pre>
+
+<p>A few things are being setup here: Under the yeoman property, we first define the main folders of our app (which in our case is ‘app’) and a general destination folder (we’re not using dist, because our server simply serves everything directly from the app folder).
+The ‘pkg’ property creates an object out of our npm package.json file, so we could reference it later.
+And finally we define our hogan task. <a href="https://github.com/vanetix/grunt-templates-hogan">Check out the docs</a> to see what options this task comes with. Important is that we wrap our generated template functions into an AMD module — so it integrates nicely with Flight through RequireJS later on. Under the files definition you can see that we are taking all html files from the templates/ folder and merging them into one templates.js file.
+‘templates.js’ contains an object, who’s keys are named after the file path of the original template — here’s an example of how we are going to use it in our app to render views from the templates in templates.js:</p>
+
+<pre>var templates = require('js/templates'),
+    htmlString = templates['templates/app_view.html'].render();</pre>
+<pre>$('#app').html(htmlString);</pre>
+
+<p>If our template would have dynamic content — e.g. {{ variableName }} — we could pass in the dynamic values to the render function like so: </p>
+
+<pre>var htmlString = templates['templates/app_view.html'].render({
+  variableName: ‘dynamic content inserted at render time’
+});</pre>
+
+<p>In the previous example above you saw already the use of RequireJS — we called <strong>require()</strong> to get the original templates.js file which Hogan generated for us. RequireJS the final big Flight passenger we need to understand before we can focus our attention on Flight itself.</p>
+
+<p><a href="/flightjs-part-2"><strong>goto Part 2 - boarding RequireJS, Karma, and Jasmine</strong></a></p>
+
+</article>
+
+<aside>
+  If you liked this post, please
+<a href="https://twitter.com/intent/tweet?url=http://react.careers//flightjs-part-1&text=Building a chat app with @flightjs Part 1 - Boarding Yeoman, Bower, Grunt (or Gulp), and Hogan&via=stefanritter"
+   target="_blank">
+  share it with your followers</a>
+or
+<a href="https://twitter.com/stefanritter">
+  follow me on Twitter</a>!
+
+</aside>
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+
+      <li>
+        <h3>
+          <a href="/javascript-resources">
+            Best Resources to Become a JavaScript Pro in 2015
+            <small><time datetime="2015-05-12T00:00:00+00:00">12 May 2015</time></small>
+          </a>
+        </h3>
+      </li>
+
+      <li>
+        <h3>
+          <a href="/starting-a-polymer-project">
+            Starting a Polymer Project
+            <small><time datetime="2014-07-13T00:00:00+00:00">13 Jul 2014</time></small>
+          </a>
+        </h3>
+      </li>
+
+      <li>
+        <h3>
+          <a href="/flightjs-part-3">
+            Building a chat app with @flightjs Part 3 - boarding Jasmine Spies
+            <small><time datetime="2014-04-14T00:00:00+00:00">14 Apr 2014</time></small>
+          </a>
+        </h3>
+      </li>
+
+  </ul>
+</aside>
+
+    </main>
+
+    <footer class="footer">
+  <a href="http://react.careers/" class="">
+    Home
+  </a>
+  &nbsp;//&nbsp;
+  <a href="http://react.careers/blog" class="">
+    Blog
+  </a>
+  &nbsp;//&nbsp;
+  <a href="http://stefanritter.com/" class="">
+    Author: Stefan Ritter
+  </a>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-59987733-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

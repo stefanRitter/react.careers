@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+
+      Switching from Grunt to Gulp &middot; React.careers
+
+  </title>
+
+  <link rel="stylesheet" href="/blog/assets/css/styles.css">
+  <link rel="stylesheet" href="/blog/assets/css/poole.css">
+
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- Syntax highlighting -->
+  <style>
+    .highlight { margin-bottom: 1rem; border-radius: 4px; }
+    .highlight pre { margin-bottom: 0; }
+    .highlight .hll { background-color: #ffc; }
+    .highlight .c { color: #999; } /* Comment */
+    .highlight .err { color: #a00; background-color: #faa } /* Error */
+    .highlight .k { color: #069; } /* Keyword */
+    .highlight .o { color: #555 } /* Operator */
+    .highlight .cm { color: #09f; font-style: italic } /* Comment.Multiline */
+    .highlight .cp { color: #099 } /* Comment.Preproc */
+    .highlight .c1 { color: #999; } /* Comment.Single */
+    .highlight .cs { color: #999; } /* Comment.Special */
+    .highlight .gd { background-color: #fcc; border: 1px solid #c00 } /* Generic.Deleted */
+    .highlight .ge { font-style: italic } /* Generic.Emph */
+    .highlight .gr { color: #f00 } /* Generic.Error */
+    .highlight .gh { color: #030; } /* Generic.Heading */
+    .highlight .gi { background-color: #cfc; border: 1px solid #0c0 } /* Generic.Inserted */
+    .highlight .go { color: #aaa } /* Generic.Output */
+    .highlight .gp { color: #009; } /* Generic.Prompt */
+    .highlight .gs { } /* Generic.Strong */
+    .highlight .gu { color: #030; } /* Generic.Subheading */
+    .highlight .gt { color: #9c6 } /* Generic.Traceback */
+    .highlight .kc { color: #069; } /* Keyword.Constant */
+    .highlight .kd { color: #069; } /* Keyword.Declaration */
+    .highlight .kn { color: #069; } /* Keyword.Namespace */
+    .highlight .kp { color: #069 } /* Keyword.Pseudo */
+    .highlight .kr { color: #069; } /* Keyword.Reserved */
+    .highlight .kt { color: #078; } /* Keyword.Type */
+    .highlight .m { color: #f60 } /* Literal.Number */
+    .highlight .s { color: #d44950 } /* Literal.String */
+    .highlight .na { color: #4f9fcf } /* Name.Attribute */
+    .highlight .nb { color: #366 } /* Name.Builtin */
+    .highlight .nc { color: #0a8; } /* Name.Class */
+    .highlight .no { color: #360 } /* Name.Constant */
+    .highlight .nd { color: #99f } /* Name.Decorator */
+    .highlight .ni { color: #999; } /* Name.Entity */
+    .highlight .ne { color: #c00; } /* Name.Exception */
+    .highlight .nf { color: #c0f } /* Name.Function */
+    .highlight .nl { color: #99f } /* Name.Label */
+    .highlight .nn { color: #0cf; } /* Name.Namespace */
+    .highlight .nt { color: #2f6f9f; } /* Name.Tag */
+    .highlight .nv { color: #033 } /* Name.Variable */
+    .highlight .ow { color: #000; } /* Operator.Word */
+    .highlight .w { color: #bbb } /* Text.Whitespace */
+    .highlight .mf { color: #f60 } /* Literal.Number.Float */
+    .highlight .mh { color: #f60 } /* Literal.Number.Hex */
+    .highlight .mi { color: #f60 } /* Literal.Number.Integer */
+    .highlight .mo { color: #f60 } /* Literal.Number.Oct */
+    .highlight .sb { color: #c30 } /* Literal.String.Backtick */
+    .highlight .sc { color: #c30 } /* Literal.String.Char */
+    .highlight .sd { color: #c30; font-style: italic } /* Literal.String.Doc */
+    .highlight .s2 { color: #c30 } /* Literal.String.Double */
+    .highlight .se { color: #c30; } /* Literal.String.Escape */
+    .highlight .sh { color: #c30 } /* Literal.String.Heredoc */
+    .highlight .si { color: #a00 } /* Literal.String.Interpol */
+    .highlight .sx { color: #c30 } /* Literal.String.Other */
+    .highlight .sr { color: #3aa } /* Literal.String.Regex */
+    .highlight .s1 { color: #c30 } /* Literal.String.Single */
+    .highlight .ss { color: #fc3 } /* Literal.String.Symbol */
+    .highlight .bp { color: #366 } /* Name.Builtin.Pseudo */
+    .highlight .vc { color: #033 } /* Name.Variable.Class */
+    .highlight .vg { color: #033 } /* Name.Variable.Global */
+    .highlight .vi { color: #033 } /* Name.Variable.Instance */
+    .highlight .il { color: #f60 } /* Literal.Number.Integer.Long */
+    .css .o,
+    .css .o + .nt,
+    .css .nt + .nt { color: #999; }
+  </style>
+</head>
+
+
+  <body>
+
+    <main class="container">
+      <header class="header">
+  <h3 class="header-title">
+    <a href="/" title="Home">React.careers</a>
+    <small>Blogging on React & JavaScript</small>
+  </h3>
+</header>
+<!--<a href="/" class="hellobar">
+  <span class="underline">Check out my Front-end Programming Masterclass.</span>
+</a>-->
+<div class="header-spacer">&nbsp;</div>
+
+
+<article class="post">
+  <h1>Switching from Grunt to Gulp</h1>
+  <p><time datetime="2014-04-06T00:00:00+00:00" class="page-date">06 Apr 2014</time></p>
+  <p>After publishing my <a href="/flightjs-part-1">tutorial on writing a chat app with flight</a>, I got a few requests on switching from Grunt to Gulp.</p>
+
+<p>I decided to put them both in the repo to compare. In total the gulpfile is 23 lines shorter than the Gruntfile.</p>
+
+<p>Because it’s a tutorial application the Grunt tasks are rather straightforward, no minifying, concatting or optimisation going on. Which means we won’t really take advantage of Gulp’s streaming features. Streaming allows you to move data from task to task, so we could lint, concat, and uglify in one continuous stream - without having to save interim results somewhere.</p>
+
+<p>Our Gruntfile.js has a Jshint task to lint Javascript, a Karma task to run tests, Hogan is used to pre-compile templates, and Compass generates one ‘application.css’ file out of all my sass files. Add to that one watch task and we’re all setup.</p>
+
+<p><a href="https://github.com/stefanRitter/flight-chat/blob/master/Gruntfile.js">Check out the Gruntfile.js here</a>. That’s 85 lines of code. Compared to 62 for the <a href="https://github.com/stefanRitter/flight-chat/blob/master/gulpfile.js">gulpfile.js</a>. What’s nice about Gulp is that the setup follows a more node-style syntax. Here’s a look at the structure of Gruntfile:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</pre></td><td class="code"><pre><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+  <span class="s1">'use strict'</span><span class="p">;</span>
+
+  <span class="c1">// load all grunt tasks
+</span>
+  <span class="nx">require</span><span class="p">(</span><span class="s1">'load-grunt-tasks'</span><span class="p">)(</span><span class="nx">grunt</span><span class="p">);</span>
+
+  <span class="c1">// configuration
+</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+    <span class="na">yeoman</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">app</span><span class="p">:</span> <span class="s1">'app'</span><span class="p">,</span>
+      <span class="na">dist</span><span class="p">:</span> <span class="s1">'dist'</span>
+    <span class="p">},</span>
+    <span class="na">pkg</span><span class="p">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">'package.json'</span><span class="p">),</span>
+
+    <span class="na">jshint</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">jshintrc</span><span class="p">:</span> <span class="s1">'.jshintrc'</span>
+      <span class="p">},</span>
+      <span class="na">all</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">'*.js'</span><span class="p">,</span>
+        <span class="s1">'server/**/*.js'</span><span class="p">,</span>
+        <span class="s1">'test/**/*.js'</span><span class="p">,</span>
+        <span class="s1">'&lt;%= yeoman.app %&gt;/js/**/*.js'</span><span class="p">,</span>
+        <span class="s1">'!&lt;%= yeoman.app %&gt;/js/templates.js'</span><span class="p">,</span>
+        <span class="s1">'!&lt;%= yeoman.app %&gt;/js/mixin/with_quick_hash.js'</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+    <span class="c1">//...
+</span>
+  <span class="p">});</span>
+
+  <span class="c1">// tasks
+</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'karma:unit:start watch'</span><span class="p">,</span><span class="s1">'watch'</span><span class="p">]);</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'build'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'jshint'</span><span class="p">,</span> <span class="s1">'compass'</span><span class="p">,</span> <span class="s1">'hogan'</span><span class="p">]);</span>
+<span class="p">};</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>And when you compare that to the structure of a gulpfile…</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></td><td class="code"><pre><span class="s1">'use strict'</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp'</span><span class="p">),</span>
+    <span class="nx">compass</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-compass'</span><span class="p">),</span>
+    <span class="nx">hogan</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-hogan-compile'</span><span class="p">),</span>
+    <span class="nx">jshint</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-jshint'</span><span class="p">),</span>
+    <span class="nx">karma</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-karma'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">paths</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">scripts</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s1">'*.js'</span><span class="p">,</span>
+    <span class="s1">'server/**/*.js'</span><span class="p">,</span>
+    <span class="s1">'test/**/*.js'</span><span class="p">,</span>
+    <span class="s1">'app/js/**/*.js'</span><span class="p">,</span>
+    <span class="s1">'!app/js/templates.js'</span><span class="p">,</span>
+    <span class="s1">'!app/js/mixin/with_quick_hash.js'</span>
+  <span class="p">],</span>
+  <span class="na">sass</span><span class="p">:</span> <span class="s1">'sass/**/*.sass'</span><span class="p">,</span>
+  <span class="na">templates</span><span class="p">:</span> <span class="s1">'templates/**/*.html'</span><span class="p">,</span>
+  <span class="na">tests</span><span class="p">:</span> <span class="s1">'test/**/*.js'</span>
+<span class="p">};</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'lint'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">paths</span><span class="p">.</span><span class="nx">scripts</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">jshint</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">jshint</span><span class="p">.</span><span class="nx">reporter</span><span class="p">(</span><span class="s1">'default'</span><span class="p">));</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>… you’ll see the typical node module syntax. Grunt’s syntax in contrast has this slightly awkward, giant object literal in the middle of it.</p>
+
+<p>To be fair though, there are some gotchas with Gulp, but they are mostly plugin specific. The hogan plugin behaves differently than the Grunt equivalent in two ways. Firstly it names templates differently, hence the extra lines of code for the templateName function to mitigate the naming differences. And secondly, it relies on Hogan 3 which is not really published to npm or the browser version of hogan.</p>
+
+<p>The second problem is karma integration, in Grunt it’s easy to just have Karma started in a separate thread and then trigger the tests when changes are detected. gulp-karma just isn’t there yet, but it’s progressing quickly - <a href="https://github.com/lazd/gulp-karma/">check it out on github</a>.</p>
+
+</article>
+
+<aside>
+  If you liked this post, please
+<a href="https://twitter.com/intent/tweet?url=http://react.careers//switching-from-grunt-to-gulp&text=Switching from Grunt to Gulp&via=stefanritter"
+   target="_blank">
+  share it with your followers</a>
+or
+<a href="https://twitter.com/stefanritter">
+  follow me on Twitter</a>!
+
+</aside>
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+
+      <li>
+        <h3>
+          <a href="/javascript-resources">
+            Best Resources to Become a JavaScript Pro in 2015
+            <small><time datetime="2015-05-12T00:00:00+00:00">12 May 2015</time></small>
+          </a>
+        </h3>
+      </li>
+
+      <li>
+        <h3>
+          <a href="/starting-a-polymer-project">
+            Starting a Polymer Project
+            <small><time datetime="2014-07-13T00:00:00+00:00">13 Jul 2014</time></small>
+          </a>
+        </h3>
+      </li>
+
+      <li>
+        <h3>
+          <a href="/flightjs-part-3">
+            Building a chat app with @flightjs Part 3 - boarding Jasmine Spies
+            <small><time datetime="2014-04-14T00:00:00+00:00">14 Apr 2014</time></small>
+          </a>
+        </h3>
+      </li>
+
+  </ul>
+</aside>
+
+    </main>
+
+    <footer class="footer">
+  <a href="http://react.careers/" class="">
+    Home
+  </a>
+  &nbsp;//&nbsp;
+  <a href="http://react.careers/blog" class="">
+    Blog
+  </a>
+  &nbsp;//&nbsp;
+  <a href="http://stefanritter.com/" class="">
+    Author: Stefan Ritter
+  </a>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-59987733-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
