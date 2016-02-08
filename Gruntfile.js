@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (grunt) {
-  
+
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
 
@@ -47,14 +47,26 @@ module.exports = function (grunt) {
       main: {
         files: [
           {
-            expand: true, 
-            flatten: true, 
+            expand: true,
+            flatten: true,
             src: [
               'src/CNAME',
               'src/**/*.jpg',
               'src/**/*.png',
               'src/*.ico',
               'src/*.html'
+              ],
+            dest: 'dist/',
+            filter: 'isFile'}
+        ]
+      },
+      blog: {
+        files: [
+          {
+            expand: true,
+            flatten: false,
+            src: [
+              'blog/**/*.html',
               ],
             dest: 'dist/',
             filter: 'isFile'}
