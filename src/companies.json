@@ -44,6 +44,10 @@
     "url": "http://ginlane.com/contact",
     "logo": "/ginlane.png"
   },
+  "GoGuardian": {
+    "url": "https://www.goguardian.com/careers.html",
+    "logo": "/goguardian.png"
+  },
   "Hipchat": {
     "url": "https://www.hipchat.com/jobs",
     "logo": "/hipchat.png"
