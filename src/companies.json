@@ -72,6 +72,10 @@
     "url": "https://www.khanacademy.org/careers",
     "logo": "/kahn-academy.png"
   },
+  "lyft": {
+    "url": "https://www.lyft.com/jobs",
+    "logo": "/lyft.png"
+  },
   "Mendeley": {
     "url": "https://www.mendeley.com/careers/",
     "logo": "/mendeley.png"
@@ -155,6 +159,10 @@
   "Twitter": {
     "url": "https://about.twitter.com/careers",
     "logo": "/twitter.png"
+  },
+  "UBER": {
+    "url": "https://www.uber.com/careers/",
+    "logo": "/uber.png"
   },
   "Yahoo": {
     "url": "https://careers.yahoo.com",
