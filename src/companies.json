@@ -80,6 +80,10 @@
     "url":"http://www.momentumfinancialtechnology.com/category/jobs/",
     "logo":"/moneyhub.png"
   },
+  "mozio": {
+    "url":"https://angel.co/mozio",
+    "logo":"/mozio.png"
+  },
   "Netflix": {
     "url": "http://jobs.netflix.com/",
     "logo": "/netflix.png"
