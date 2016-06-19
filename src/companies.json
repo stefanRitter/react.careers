@@ -100,6 +100,10 @@
     "url": "https://www.nitrous.io/jobs/",
     "logo": "/nitrous.png"
   },
+  "Paperless Post": {
+    "url": "https://www.paperlesspost.com/jobs",
+    "logo": "/paperless-post.png"
+  },
   "PayPal": {
     "url": "https://www.paypal.com/ph/cgi-bin/webscr?cmd=p/gen/jobs-outside",
     "logo": "/paypal.png"
