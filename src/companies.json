@@ -124,6 +124,10 @@
     "url": "http://www.procore.com/jobs/",
     "logo": "/procore.png"
   },
+  "Qubit": {
+    "url": "http://www.qubit.com/careers",
+    "logo": "/qubit.png"
+  },
   "Reddit": {
     "url": "https://jobs.lever.co/reddit",
     "logo": "/reddit.png"
@@ -160,6 +164,10 @@
     "url": "http://jobs.state.com/",
     "logo": "/state.png"
   },
+  "Sticker Mule": {
+    "url": "https://www.stickermule.com/jobs",
+    "logo": "/sticker-mule.png"
+  },
   "TechMagic": {
     "url": "http://www.techmagic.co/career",
     "logo": "/techmagic.png"
@@ -176,20 +184,16 @@
     "url": "https://www.uber.com/careers/",
     "logo": "/uber.png"
   },
+  "X-Team": {
+    "url": "https://x-team.com/frontend-developer/?utm_campaign=reactcareers",
+    "logo": "/xteam.jpg"
+  },
   "Yahoo": {
     "url": "https://careers.yahoo.com",
     "logo": "/yahoo.png"
   },
-  "Qubit": {
-    "url": "http://www.qubit.com/careers",
-    "logo": "/qubit.png"
-  },
   "Zapier": {
     "url": "https://zapier.com/jobs/",
     "logo": "/zapier.png"
-  },
-  "Sticker Mule": {
-    "url": "https://www.stickermule.com/jobs",
-    "logo": "/sticker-mule.png"
   }
 }
