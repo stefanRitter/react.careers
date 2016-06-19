@@ -60,6 +60,10 @@
     "url": "https://www.goguardian.com/careers.html",
     "logo": "/goguardian.png"
   },
+  "Habu": {
+    "url": "http://habu.co/jobs",
+    "logo": "/habu.png"
+  },
   "Hipchat": {
     "url": "https://www.hipchat.com/jobs",
     "logo": "/hipchat.png"
