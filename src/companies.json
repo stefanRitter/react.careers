@@ -64,6 +64,10 @@
     "url": "http://habu.co/jobs",
     "logo": "/habu.png"
   },
+  "Handshake": {
+    "url": "https://joinhandshake.com/careers/",
+    "logo": "/handshake.png"
+  },
   "Hipchat": {
     "url": "https://www.hipchat.com/jobs",
     "logo": "/hipchat.png"
