@@ -3,3 +3,8 @@ node_modules/
 bower_components/
 dist/
 .grunt/
+.bundle
+.idea/
+.vagrant
+Movefile
+vendor

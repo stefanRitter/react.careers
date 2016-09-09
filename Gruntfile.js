@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     stylus: {
       compile: {
         options: {
+          compress: true,
           paths: ['src/**/*']
         },
         files: {
@@ -24,7 +25,7 @@ module.exports = function (grunt) {
       compile: {
         options: {
           client: false,
-          pretty: false,
+          pretty: true,
           data: function (dest, src) {
             var companies = require('fs').readFileSync(
               __dirname+'/src/companies.json',

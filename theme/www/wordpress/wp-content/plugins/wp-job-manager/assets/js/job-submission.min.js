@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){a("body").on("click",".job-manager-remove-uploaded-file",function(){return a(this).closest(".job-manager-uploaded-file").remove(),!1})});
