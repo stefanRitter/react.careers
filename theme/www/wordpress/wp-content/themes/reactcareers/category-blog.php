@@ -22,12 +22,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+			<h1 style="text-align:center;">React.careers Blog</h1>
+			<h2 style="text-align:center;">Blogging on React &amp; JavaScript</h2>
 
-			<header class="page-header">
-                <h1 class="page-title">React.careers Blog</h1>
-                <div class="taxonomy-description">Blogging on React &amp; JavaScript</div>
-			</header><!-- .page-header -->
-
+			<div class="clear-both"></div>
 
             <?php
 			// Start the Loop.
@@ -38,7 +36,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				get_template_part( 'template-parts/content-headline', get_post_format() );
 
 			// End the loop.
 			endwhile;

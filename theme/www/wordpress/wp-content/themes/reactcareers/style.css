@@ -1,19 +1,14 @@
 /*
-Theme Name: Twenty Sixteen
-Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-Version: 1.3
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
-Text Domain: twentysixteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Theme Name: React.careers
+Author: Stefan Ritter
+Author URI: https://www.stefanritter.com/
+Description: coming soon
+Text Domain: reactcareers
 */
 
+#wpadminbar {
+	background: #222 !important;
+}
 
 /**
  * Table of Contents
@@ -464,7 +459,7 @@ html {
 }
 
 body {
-	background: #1a1a1a;
+	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -2732,7 +2727,7 @@ p > video {
  */
 
 @media screen and (min-width: 44.375em) {
-	body:not(.custom-background-image):before,
+	/*body:not(.custom-background-image):before,
 	body:not(.custom-background-image):after {
 		background: inherit;
 		content: "";
@@ -2754,10 +2749,10 @@ p > video {
 
 	body:not(.custom-background-image):after {
 		bottom: 0;
-	}
+	}*/
 
 	.site {
-		margin: 21px;
+		margin: 0;
 	}
 
 	.site-main {
@@ -3986,225 +3981,4 @@ p > video {
 /**
  * 16.0 - React.careers
  */
- body,
- html {
-   height: 100%;
-   margin: 0;
-   font-family: 'Raleway', Helvetica, Arial, sans-serif;
-   font-size: 18px;
- }
- @media (max-width: 980px) {
-   body,
-   html {
-     font-size: 14px;
-   }
- }
- h1,
- h2 {
-   font-weight: 400;
- }
- h1 {
-   font-size: 3em;
- }
- h2 {
-   font-size: 1.5em;
-   padding: 0 0.3em;
- }
- h3 {
-   font-size: 1.3em;
-   margin: 0;
- }
- section {
-   margin: auto;
-   max-width: 1200px;
- }
- .phone-only {
-   display: none;
- }
- @media (max-width: 460px) {
-   .phone-only {
-     display: block !important;
-   }
- }
- .clear-both {
-   clear: both;
-   padding-top: 2em;
- }
- .title {
-   color: #61dafb;
-   background: #222;
-   margin-top: 0;
-   text-align: center;
- }
- .title h2 {
-   padding-bottom: 2em;
-   margin: 0;
-   line-height: 1.5;
- }
- @media (max-width: 460px) {
-   .title h2 {
-     font-size: 1em;
-   }
- }
- .title h1 {
-   margin: 0;
-   padding: 1em 0.5em;
-   vertical-align: middle;
- }
- @media (max-width: 460px) {
-   .title h1 {
-     padding: 0.5em 0 0 0;
-   }
- }
- .title h1 img {
-   vertical-align: middle;
-   height: 2em;
- }
- .title h1 a {
-   color: inherit;
-   text-decoration: none;
- }
- @media (max-width: 460px) {
-   .title h1 em {
-     font-size: 0.7em;
-     position: relative;
-     top: -0.5em;
-   }
- }
- .alerts-form {
-   background: LightGray;
-   text-align: center;
-   padding: 3em 15px 4em;
- }
- .alerts-form a {
-   color: Black;
- }
- .alerts-form h3 {
-   margin-bottom: 0.4em;
- }
- .alerts-form label,
- .alerts-form input {
-   display: block;
-   min-width: 270px;
-   margin: 0 10px;
- }
- @media (max-width: 460px) {
-   .alerts-form label,
-   .alerts-form input {
-     margin: 0;
-   }
- }
- .alerts-form label {
-   font-weight: bold;
-   margin-top: 1em;
- }
- .alerts-form input {
-   border: 0;
-   border-bottom: 2px solid Black;
-   height: 2em;
-   font-size: 1.2em;
- }
- .form-group {
-   display: inline-block;
-   text-align: left;
- }
- .form-button,
- .button {
-   appearance: none;
-   border: 0;
-   padding: 10px 20px;
-   background: #61dafb;
-   color: #222;
-   text-decoration: none;
-   font-size: 1em;
-   font-weight: bold;
-   border-radius: 5px;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   border-bottom: 2px solid Black;
- }
- .form-button {
-   padding: 0;
-   margin: 0 10px;
-   height: 2.5em;
-   width: 100%;
- }
- @media (max-width: 460px) {
-   .form-button {
-     margin: 0;
-   }
- }
- .company {
-   float: left;
-   width: 22%;
-   margin: 1em 1.5%;
-   text-decoration: none;
- }
- .company span {
-   display: inline-block;
-   margin-top: 0.5em;
-   color: #222;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
- }
- .company img {
-   width: 80%;
-   -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-   filter: grayscale(100%);
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
- }
- .company:hover img {
-   -webkit-filter: grayscale(0);
-   -moz-filter: grayscale(0);
-   filter: grayscale(0);
- }
- .company:hover span {
-   color: #61dafb;
- }
- @media (max-width: 980px) {
-   .company {
-     width: 30%;
-   }
- }
- @media (max-width: 460px) {
-   .company {
-     width: 47%;
-   }
- }
- .company.stand-alone {
-   float: none;
-   display: block;
-   margin: auto;
-   width: 100%;
- }
- .company.stand-alone img {
-   width: 100%;
-   max-width: 212px;
-   -webkit-filter: grayscale(0);
-   -moz-filter: grayscale(0);
-   filter: grayscale(0);
- }
- .company.stand-alone .button {
-   display: inline-block;
-   margin-top: 0.5em;
- }
- #addcompany {
-   clear: both;
-   padding: 3em 2em 8em 2em;
-   min-height: 70%;
-   background: #222;
-   color: White;
- }
- #addcompany a {
-   color: #61dafb;
-   font-weight: bold;
-   text-decoration: none;
-   border-bottom: 2px solid #61dafb;
- }
- #addcompany h2 {
-   font-size: 2em;
- }
+body,html{height:100%;margin:0;font-family:'Raleway',Helvetica,Arial,sans-serif;font-size:18px;}@media (max-width:980px){body,html{font-size:14px}}h1,h2{font-weight:400}h1{font-size:3em}h2{font-size:1.5em;padding:0 .3em}h3{font-size:1.3em;margin:0}section{margin:auto;max-width:1200px;text-align:center}.phone-only{display:none;}@media (max-width:460px){.phone-only{display:block !important}}.clear-both{clear:both;padding-top:2em}.title{color:#61dafb;background:#222;text-align:center;margin-top:0;}.title h2{padding-bottom:2em;margin:0;line-height:1.5;}@media (max-width:460px){.title h2{font-size:1em}}.title h1{margin:0;padding:1em .5em;vertical-align:middle;}@media (max-width:460px){.title h1{padding:.5em 0 0 0}}.title h1 img{vertical-align:middle;height:2em}.title h1 a{color:inherit;text-decoration:none}@media (max-width:460px){.title h1 em{font-size:.7em;position:relative;top:-.5em}}.alerts-form{background:LightGray;text-align:center;padding:3em 15px 4em;}.alerts-form a{color:Black}.alerts-form h3{margin-bottom:.4em}.alerts-form label,.alerts-form input{display:block;min-width:270px;margin:0 10px;}@media (max-width:460px){.alerts-form label,.alerts-form input{margin:0}}.alerts-form label{font-weight:bold;margin-top:1em}.alerts-form input{border:0;border-bottom:2px solid Black;height:2em;font-size:1.2em}.form-group{display:inline-block;text-align:left}.form-button,.button{appearance:none;border:0;padding:10px 20px;background:#61dafb;color:#222;text-decoration:none;font-size:1em;font-weight:bold;border-radius:5px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid Black}.form-button{padding:0;margin:0 10px;height:2.5em;width:100%;position:relative;top:-2px;}@media (max-width:460px){.form-button{margin:0}}.company{float:left;width:22%;margin:1em 1.5%;text-decoration:none;}.company span{display:inline-block;margin-top:.5em;color:#222;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.company img{width:80%;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%);-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.company:hover img{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);filter:grayscale(0)}.company:hover span{color:#61dafb}@media (max-width:980px){.company{width:30%}}@media (max-width:460px){.company{width:47%}}.company.stand-alone{float:none;display:block;margin:auto;width:100%;}.company.stand-alone img{width:100%;max-width:212px;-webkit-filter:grayscale(0);-moz-filter:grayscale(0);filter:grayscale(0)}.company.stand-alone .button{display:inline-block;margin-top:.5em}#addcompany{clear:both;text-align:center;padding:3em 2em 8em 2em;min-height:70%;background:#222;color:White;}#addcompany a{color:#61dafb;font-weight:bold;text-decoration:none;border-bottom:2px solid #61dafb}#addcompany h2{font-size:2em}
