@@ -49,7 +49,7 @@
 <body <?php body_class(); ?>>
 
     <div class="title">
-      <h1><a href="/"><img src="/wp-content/uploads/2016/09/cropped-react-logo.png" alt="React.js"><br class="phone-only">React<br class="phone-only"><em>.careers</em></a></h1>
+      <h1><a href="/"><img src="http://77.104.147.214/~react789/wp-content/uploads/2016/09/react-logo.png" alt="React.js"><br class="phone-only">React<br class="phone-only"><em>.careers</em></a></h1>
       <h2>The ultimate directory of companies using React.js.<br>Find jobs at companies who are using your favorite JS framework!</h2>
     </div>
 
