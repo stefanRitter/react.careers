@@ -19,7 +19,14 @@
 
 		<h2>Add a company</h2>
 		Email company name, 500x500px logo, and careers url to <a href="mailto:admin@react.careers">admin@react.careers</a>
-	  <p style="margin-top:3em;"><em>Built by <a href="http://stefanritter.com/">Stefan Ritter</a></em></p>
+
+		<br>
+		<br>
+		<a href="/post-a-job" class="button" style="color:black">Post a Job</a>
+
+		<p style="margin-top:3em;">
+			<em>Built by <a href="http://stefanritter.com/">Stefan Ritter</a></em>
+		</p>
 
 	<?php else : ?>
 		Need help? Please email: <a href="mailto:admin@react.careers">admin@react.careers</a>

@@ -21,8 +21,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php get_template_part( 'template-parts/content', 'tabs' );  ?>
-
 		<?php if ( have_posts() ) : ?>
 			<h1 style="text-align:center;">React.careers Blog</h1>
 			<h2 style="text-align:center;">Blogging on React &amp; JavaScript</h2>
