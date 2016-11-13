@@ -15,8 +15,16 @@
 </div><!-- .site -->
 
 <footer id="addcompany">
-  <h2>Add a company</h2>Email company name, 500x500px logo, and careers url to <a href="mailto:admin@react.careers">admin@react.careers</a>
-  <p style="margin-top:3em;"><em>Built by <a href="http://stefanritter.com/">Stefan Ritter</a></em></p>
+	<?php if ( $post->post_name != 'post-a-job') : ?>
+
+		<h2>Add a company</h2>
+		Email company name, 500x500px logo, and careers url to <a href="mailto:admin@react.careers">admin@react.careers</a>
+	  <p style="margin-top:3em;"><em>Built by <a href="http://stefanritter.com/">Stefan Ritter</a></em></p>
+
+	<?php else : ?>
+		Need help? Please email: <a href="mailto:admin@react.careers">admin@react.careers</a>
+	<?php endif; ?>
+
 </footer>
 
 <script>

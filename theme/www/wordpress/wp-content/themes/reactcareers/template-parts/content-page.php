@@ -8,11 +8,18 @@
  */
 ?>
 
-<?php get_template_part('template-parts/content', 'tabs');  ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php the_title( '<h1 style="text-align:center">', '</h1>' ); ?>
+
+	<?php if ( $post->post_name != 'post-a-job') : ?>
+		<div style="text-align:center;clear:both;margin-bottom:20px">
+			<a href="/post-a-job" class="button">Post a Job</a>
+		</div>
+	<?php else : ?>
+		<div style="text-align:center;clear:both;margin-bottom:30px">
+		</div>
+	<?php endif; ?>
 
 	<?php twentysixteen_post_thumbnail(); ?>
 

@@ -99,6 +99,7 @@ template {
 
 a {
 	background-color: transparent;
+	cursor: pointer;
 }
 
 abbr[title] {
@@ -3989,4 +3990,8 @@ nav.tabs a {
 }
 nav.tabs a.active-tab {
 	color: lightgray;
+}
+
+.job_listing_preview.single_job_listing {
+	overflow: hidden;
 }

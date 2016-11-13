@@ -50,31 +50,41 @@
 
     <div class="title">
       <h1><a href="/"><img src="http://77.104.147.214/~react789/wp-content/uploads/2016/09/react-logo.png" alt="React.js"><br class="phone-only">React<br class="phone-only"><em>.careers</em></a></h1>
-      <h2>The ultimate directory of companies using React.js.<br>Find jobs at companies who are using your favorite JS framework!</h2>
+
+      <?php if ( $post->post_name != 'post-a-job') : ?>
+        <h2>The ultimate directory of companies using React.js.<br>Find jobs at companies who are using your favorite JS framework!</h2>
+      <?php endif; ?>
+
     </div>
 
-    <form action="//gymnosbody.us8.list-manage.com/subscribe/post?u=8736a6f17f9edb63fd39a1524&amp;amp;id=a025c3ad68" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="alerts-form validate">
-      <h3>Get React.js job alerts via email:
-      </h3>
-      <div style="position: absolute; left: -5000px; height: 0;">
-        <input type="text" name="b_8736a6f17f9edb63fd39a1524_a025c3ad68" tabindex="-1" value="">
-      </div>
-      <div class="form-group">
-        <label for="mce-EMAIL">Email Address*</label>
-        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="your@email.com" class="required email">
-      </div>
-      <div class="form-group">
-        <label for="mce-LOCATION">Location</label>
-        <input type="text" value="" name="LOCATION" id="mce-LOCATION" placeholder="e.g. World, London, USA, ...">
-      </div>
-      <div class="form-group">
-        <label>&nbsp;</label>
-        <button type="submit" name="subscribe" class="form-button">Alert me</button>
-      </div>
-    </form>
+    <?php if ( $post->post_name != 'post-a-job') : ?>
+      <form action="//gymnosbody.us8.list-manage.com/subscribe/post?u=8736a6f17f9edb63fd39a1524&amp;amp;id=a025c3ad68" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate class="alerts-form validate">
+        <h3>Get React.js job alerts via email:
+        </h3>
+        <div style="position: absolute; left: -5000px; height: 0;">
+          <input type="text" name="b_8736a6f17f9edb63fd39a1524_a025c3ad68" tabindex="-1" value="">
+        </div>
+        <div class="form-group">
+          <label for="mce-EMAIL">Email Address*</label>
+          <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="your@email.com" class="required email">
+        </div>
+        <div class="form-group">
+          <label for="mce-LOCATION">Location</label>
+          <input type="text" value="" name="LOCATION" id="mce-LOCATION" placeholder="e.g. World, London, USA, ...">
+        </div>
+        <div class="form-group">
+          <label>&nbsp;</label>
+          <button type="submit" name="subscribe" class="form-button">Alert me</button>
+        </div>
+      </form>
 
-    <div class="clear-both"></div>
+      <div class="clear-both"></div>
+    <?php endif; ?>
 
 <div id="page" class="site">
 	<div class="site-inner">
 		<div id="content" class="site-content">
+
+      <?php if ( $post->post_name != 'post-a-job') : ?>
+        <?php get_template_part( 'template-parts/content', 'tabs' );  ?>
+      <?php endif; ?>
