@@ -23,9 +23,15 @@ function get_job_listings( $args = array() ) {
 		'fields'            => 'all'
 	) );
 
+	if ( false == get_option( 'job_manager_hide_expired_content', 1 ) ) {
+		$post_status = array( 'publish', 'expired' );
+	} else {
+		$post_status = 'publish';
+	}
+
 	$query_args = array(
 		'post_type'              => 'job_listing',
-		'post_status'            => 'publish',
+		'post_status'            => $post_status,
 		'ignore_sticky_posts'    => 1,
 		'offset'                 => absint( $args['offset'] ),
 		'posts_per_page'         => intval( $args['posts_per_page'] ),
@@ -141,6 +147,11 @@ function get_job_listings( $args = array() ) {
 		if ( false === ( $result = get_transient( $query_args_hash ) ) ) {
 			$result = new WP_Query( $query_args );
 			set_transient( $query_args_hash, $result, DAY_IN_SECONDS * 30 );
+		}
+
+		// random order is cached so shuffle them
+		if ( $query_args[ 'orderby' ] == 'rand' ) {
+			shuffle( $result->posts );
 		}
 
 	}
@@ -485,6 +496,15 @@ function job_manager_user_can_edit_job( $job_id ) {
 }
 
 /**
+ * True if only one type allowed per job
+ *
+ * @return bool
+ */
+function job_manager_multi_job_type() {
+	return apply_filters( 'job_manager_multi_job_type', get_option( 'job_manager_multi_job_type' ) == 1 ? true : false );
+}
+
+/**
  * True if registration is enabled.
  *
  * @return bool
@@ -693,14 +713,14 @@ function job_manager_prepare_uploaded_files( $file_data ) {
 		$files_to_upload[] = $file_data;
 	}
 
-	return $files_to_upload;
+	return apply_filters( 'job_manager_prepare_uploaded_files', $files_to_upload );
 }
 
 /**
  * Upload a file using WordPress file API.
  * @param  array $file_data Array of $_FILE data to upload.
  * @param  array $args Optional arguments
- * @return array|WP_Error Array of objects containing either file information or an error
+ * @return stdClass|WP_Error Object containing file information, or error
  */
 function job_manager_upload_file( $file, $args = array() ) {
 	global $job_manager_upload, $job_manager_uploading_file;
@@ -721,6 +741,24 @@ function job_manager_upload_file( $file, $args = array() ) {
 		$allowed_mime_types = job_manager_get_allowed_mime_types( $job_manager_uploading_file );
 	} else {
 		$allowed_mime_types = $args['allowed_mime_types'];
+	}
+
+	/**
+	 * Filter file configuration before upload
+	 *
+	 * This filter can be used to modify the file arguments before being uploaded, or return a WP_Error
+	 * object to prevent the file from being uploaded, and return the error.
+	 *
+	 * @since 1.25.2
+	 *
+	 * @param array $file               Array of $_FILE data to upload.
+	 * @param array $args               Optional file arguments
+	 * @param array $allowed_mime_types Array of allowed mime types from field config or defaults
+	 */
+	$file = apply_filters( 'job_manager_upload_file_pre_upload', $file, $args, $allowed_mime_types );
+
+	if ( is_wp_error( $file ) ) {
+		return $file;
 	}
 
 	if ( ! in_array( $file['type'], $allowed_mime_types ) ) {
