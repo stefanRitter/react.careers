@@ -43,6 +43,12 @@
   ga('send', 'pageview');
 </script>
 
+<script>
+	jQuery('input.application_button.button').on('click', function () {
+		ga('send', 'event', 'applybutton', 'applybuttonclicked');
+	});
+</script
+
 <?php wp_footer(); ?>
 </body>
 </html>

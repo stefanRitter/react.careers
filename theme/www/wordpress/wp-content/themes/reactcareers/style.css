@@ -3995,3 +3995,27 @@ nav.tabs a.active-tab {
 .job_listing_preview.single_job_listing {
 	overflow: hidden;
 }
+
+article.job_listing div.entry-content {
+	float: none !important;
+	margin: auto !important;
+	padding: 5px !important;
+	max-width: 800px;
+	width: auto !important;
+}
+
+.single_job_listing .company {
+	margin-right: 2em;
+}
+
+.single_job_listing .company .name {
+	display: block;
+  margin-top: 3em;
+  margin-left: 0;
+  padding: 0;
+}
+
+.single_job_listing .company .name a {
+	float: none;
+  margin: 0;
+}
