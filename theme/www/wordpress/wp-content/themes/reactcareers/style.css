@@ -1,5 +1,5 @@
 /*
-Theme Name: React.careers
+Theme Name: React.careers2
 Author: Stefan Ritter
 Author URI: https://www.stefanritter.com/
 Description: coming soon
@@ -42,7 +42,6 @@ Text Domain: twentysixteen
  *    14.3 - >= 910px
  *    14.4 - >= 985px
  *    14.5 - >= 1200px
- * 15.0 - Print
  * 16.0 - React.careers
  */
 
@@ -3734,244 +3733,6 @@ p > video {
 
 
 /**
- * 15.0 - Print
- */
-
-@media print {
-	form,
-	button,
-	input,
-	select,
-	textarea,
-	.navigation,
-	.main-navigation,
-	.social-navigation,
-	.sidebar,
-	.content-bottom-widgets,
-	.header-image,
-	.page-links,
-	.edit-link,
-	.comment-respond,
-	.comment-edit-link,
-	.comment-reply-link,
-	.comment-metadata .edit-link,
-	.pingback .edit-link {
-		display: none;
-	}
-
-	body,
-	blockquote cite,
-	blockquote small,
-	pre,
-	.entry-content h4,
-	.entry-content h5,
-	.entry-content h6,
-	.entry-summary h4,
-	.entry-summary h5,
-	.entry-summary h6,
-	.comment-content h4,
-	.comment-content h5,
-	.comment-content h6,
-	.entry-content .author-title {
-		font-size: 12pt;
-	}
-
-	blockquote {
-		font-size: 14.25pt;
-	}
-
-	.site-title,
-	.page-title,
-	.comments-title,
-	.entry-content h2,
-	.entry-summary h2,
-	.comment-content h2,
-	.widecolumn h2 {
-		font-size: 17.25pt;
-	}
-
-	.site-description {
-		display: block;
-	}
-
-	.entry-title {
-		font-size: 24.75pt;
-		line-height: 1.2727272727;
-		margin-bottom: 1.696969697em;
-	}
-
-	.format-aside .entry-title,
-	.format-image .entry-title,
-	.format-video .entry-title,
-	.format-quote .entry-title,
-	.format-gallery .entry-title,
-	.format-status .entry-title,
-	.format-link .entry-title,
-	.format-audio .entry-title,
-	.format-chat .entry-title {
-		font-size: 17.25pt;
-		line-height: 1.304347826;
-		margin-bottom: 1.826086957em;
-	}
-
-	.entry-content h1,
-	.entry-summary h1,
-	.comment-content h1 {
-		font-size: 21pt;
-	}
-
-	.entry-content h3,
-	.entry-summary h3,
-	.comment-content h3,
-	body:not(.search-results) .entry-summary {
-		font-size: 14.25pt;
-	}
-
-	.site-description,
-	.author-bio,
-	.entry-footer,
-	.sticky-post,
-	.taxonomy-description,
-	.entry-caption,
-	.comment-metadata,
-	.comment-notes,
-	.comment-awaiting-moderation,
-	.site-info,
-	.wp-caption .wp-caption-text,
-	.gallery-caption {
-		font-size: 9.75pt;
-	}
-
-	body,
-	.site {
-		background: none !important; /* Brute force since user agents all print differently. */
-	}
-
-	body,
-	blockquote cite,
-	blockquote small,
-	.site-branding .site-title a,
-	.entry-title a,
-	.comment-author {
-		color: #1a1a1a !important; /* Make sure color schemes don't affect to print */
-	}
-
-	blockquote,
-	.page-header,
-	.comments-title {
-		border-color: #1a1a1a !important; /* Make sure color schemes don't affect to print */
-	}
-
-	blockquote,
-	.site-description,
-	body:not(.search-results) .entry-summary,
-	body:not(.search-results) .entry-summary blockquote,
-	.author-bio,
-	.entry-footer,
-	.entry-footer a,
-	.sticky-post,
-	.taxonomy-description,
-	.entry-caption,
-	.comment-author,
-	.comment-metadata a,
-	.comment-notes,
-	.comment-awaiting-moderation,
-	.site-info,
-	.site-info a,
-	.wp-caption .wp-caption-text,
-	.gallery-caption {
-		color: #686868 !important; /* Make sure color schemes don't affect to print */
-	}
-
-	code,
-	hr {
-		background-color: #d1d1d1 !important; /* Make sure color schemes don't affect to print */
-	}
-
-	pre,
-	abbr,
-	acronym,
-	table,
-	th,
-	td,
-	.author-info,
-	.comment-list article,
-	.comment-list .pingback,
-	.comment-list .trackback,
-	.no-comments {
-		border-color: #d1d1d1 !important; /* Make sure color schemes don't affect to print */
-	}
-
-	a {
-		color: #007acc !important; /* Make sure color schemes don't affect to print */
-	}
-
-	.entry-content a,
-	.entry-summary a,
-	.taxonomy-description a,
-	.comment-content a,
-	.pingback .comment-body > a {
-		box-shadow: none;
-		border-bottom: 1px solid #007acc !important; /* Make sure color schemes don't affect to print */
-	}
-
-	.site {
-		margin: 5%;
-	}
-
-	.site-inner {
-		max-width: none;
-	}
-
-	.site-header {
-		padding: 0 0 1.75em;
-	}
-
-	.site-branding {
-		margin-top: 0;
-		margin-bottom: 1.75em;
-	}
-
-	.site-main {
-		margin-bottom: 3.5em;
-	}
-
-	.entry-header,
-	.entry-footer,
-	.page-header,
-	.page-content,
-	.entry-content,
-	.entry-summary,
-	.post-thumbnail,
-	.comments-area {
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	.post-thumbnail,
-	.site-main > article {
-		margin-bottom: 3.5em;
-	}
-
-	.entry-content blockquote.alignleft,
-	.entry-content blockquote.alignright {
-		border-width: 4px 0 0 0;
-		padding: 0.9473684211em 0 0;
-		width: -webkit-calc(50% - 0.736842105em);
-		width: calc(50% - 0.736842105em);
-	}
-
-	body:not(.search-results) .entry-header + .entry-summary {
-		margin-top: -1.473684211em;
-	}
-
-	.site-footer,
-	.widecolumn {
-		padding: 0;
-	}
-}
-
-/**
  * 16.0 - React.careers
  */
 body,html{height:100%;margin:0;font-family:'Raleway',Helvetica,Arial,sans-serif;font-size:18px;}@media (max-width:980px){body,html{font-size:14px}}h1,h2{font-weight:400}h1{font-size:3em}h2{font-size:1.5em;padding:0 .3em}h3{font-size:1.3em;margin:0}section{margin:auto;max-width:1200px;text-align:center}.phone-only{display:none;}@media (max-width:460px){.phone-only{display:block !important}}.clear-both{clear:both;padding-top:2em}.title{color:#61dafb;background:#222;text-align:center;margin-top:0;}.title h2{padding-bottom:2em;margin:0;line-height:1.5;}@media (max-width:460px){.title h2{font-size:1em}}.title h1{margin:0;padding:1em .5em;vertical-align:middle;}@media (max-width:460px){.title h1{padding:.5em 0 0 0}}.title h1 img{vertical-align:middle;height:2em}.title h1 a{color:inherit;text-decoration:none}@media (max-width:460px){.title h1 em{font-size:.7em;position:relative;top:-.5em}}.alerts-form{background:LightGray;text-align:center;padding:1.5em 15px 2em;}.alerts-form a{color:Black}.alerts-form h3{margin-bottom:.4em}.alerts-form label,.alerts-form input{display:block;min-width:270px;margin:0 10px;}@media (max-width:460px){.alerts-form label,.alerts-form input{margin:0}}.alerts-form label{font-weight:bold;margin-top:1em}.alerts-form input{border:0;border-bottom:2px solid Black;height:2em;font-size:1.2em}.form-group{display:inline-block;text-align:left;padding:0 3px}.form-button,.button{appearance:none;border:0;padding:10px 20px;background:#61dafb;color:#222;text-decoration:none;font-size:1em;font-weight:bold;border-radius:5px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid Black;cursor:pointer;}.form-button:hover,.button:hover{color:inherit;background:#007acc}.form-button{padding:0;margin:0 10px;height:2.5em;width:100%;position:relative;top:-2px;}@media (max-width:460px){.form-button{margin:0}}.company{float:left;width:22%;margin:1em 1.5%;text-decoration:none;}.company h1{margin-bottom:.5em}.company a{cursor:pointer;}.company a:hover{color:inherit;background:#007acc}.company .nav-links a:hover{background:none}.company span{display:inline-block;margin-top:.5em;color:#222;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.company img{width:80%;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%);-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.company:hover img{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);filter:grayscale(0)}.company:hover span{color:#61dafb}@media (max-width:980px){.company{width:30%}}@media (max-width:460px){.company{width:47%}}.company.stand-alone{float:none;display:block;margin:auto;width:100%;}.company.stand-alone img{width:100%;max-width:212px;-webkit-filter:grayscale(0);-moz-filter:grayscale(0);filter:grayscale(0)}.company.stand-alone .button{display:inline-block;margin-top:.5em}#addcompany{clear:both;text-align:center;padding:3em 2em 8em 2em;min-height:70%;background:#222;color:White;}#addcompany a{color:#61dafb;font-weight:bold;text-decoration:none;border-bottom:2px solid #61dafb}#addcompany h2{font-size:2em}
@@ -4018,4 +3779,23 @@ article.job_listing div.entry-content {
 .single_job_listing .company .name a {
 	float: none;
   margin: 0;
+	display: block;
+	box-shadow: none;
+}
+
+.position .company {
+	float: none;
+	width: auto;
+	margin: 0;
+}
+
+.position .company:hover img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.single_job_listing .company .tagline {
+	margin: 0;
+	padding: 0;
 }

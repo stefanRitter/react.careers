@@ -21,13 +21,13 @@
     <meta property="og:title" content="React.careers - The ultimate directory of companies using React.js">
     <meta property="og:site_name" content="React.careers">
     <meta property="og:url" content="http://react.careers">
-    <meta property="og:image" content="http://react.careers/logo.png">
+    <meta property="og:image" content="http://react.careers/wp-content/uploads/2016/09/react-logo.png">
     <meta property="og:description" content="The ultimate directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://react.careers">
     <meta property="og:title" content="React.careers - The ultimate directory of companies using React.js">
     <meta property="og:description" content="The ultimate directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js">
-    <meta property="og:image" content="http://react.careers/logo.png">
+    <meta property="og:image" content="http://react.careers/wp-content/uploads/2016/09/react-logo.png">
     <meta property="og:site_name" content="React.careers">
 
 	<meta name="twitter:card" content="summary_large_image">
@@ -35,7 +35,7 @@
     <meta name="twitter:creator" content="@stefanritter">
     <meta name="twitter:title" content="React.careers - The ultimate directory of companies using React.js">
     <meta name="twitter:description" content="The ultimate directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js">
-    <meta name="twitter:image:src" content="http://react.careers/logo.png">
+    <meta name="twitter:image:src" content="http://react.careers/wp-content/uploads/2016/09/react-logo.png">
 
 	<link href="http://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet" type="text/css">
 
