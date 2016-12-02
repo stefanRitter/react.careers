@@ -20,14 +20,14 @@
 	<meta property="og:type" content="website">
     <meta property="og:title" content="React.careers - The ultimate directory of companies using React.js">
     <meta property="og:site_name" content="React.careers">
-    <meta property="og:url" content="http://react.careers">
-    <meta property="og:image" content="http://react.careers/wp-content/uploads/2016/09/react-logo.png">
+    <meta property="og:url" content="https://react.careers">
+    <meta property="og:image" content="https://react.careers/wp-content/uploads/2016/09/react-logo.png">
     <meta property="og:description" content="The ultimate directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://react.careers">
+    <meta property="og:url" content="https://react.careers">
     <meta property="og:title" content="React.careers - The ultimate directory of companies using React.js">
     <meta property="og:description" content="The ultimate directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js">
-    <meta property="og:image" content="http://react.careers/wp-content/uploads/2016/09/react-logo.png">
+    <meta property="og:image" content="https://react.careers/wp-content/uploads/2016/09/react-logo.png">
     <meta property="og:site_name" content="React.careers">
 
 	<meta name="twitter:card" content="summary_large_image">
@@ -35,9 +35,9 @@
     <meta name="twitter:creator" content="@stefanritter">
     <meta name="twitter:title" content="React.careers - The ultimate directory of companies using React.js">
     <meta name="twitter:description" content="The ultimate directory of companies using React.js - Find jobs at companies who are using your favorite framework: React.js">
-    <meta name="twitter:image:src" content="http://react.careers/wp-content/uploads/2016/09/react-logo.png">
+    <meta name="twitter:image:src" content="https://react.careers/wp-content/uploads/2016/09/react-logo.png">
 
-	<link href="http://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet" type="text/css">
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
@@ -49,7 +49,7 @@
 <body <?php body_class(); ?>>
 
     <div class="title">
-      <h1><a href="/"><img src="http://77.104.147.214/~react789/wp-content/uploads/2016/09/react-logo.png" alt="React.js"><br class="phone-only">React<br class="phone-only"><em>.careers</em></a></h1>
+      <h1><a href="/"><img src="https://react.careers/wp-content/uploads/2016/09/react-logo.png" alt="React.js"><br class="phone-only">React<br class="phone-only"><em>.careers</em></a></h1>
 
       <?php if ( $post->post_name != 'post-a-job') : ?>
         <h2>The ultimate directory of companies using React.js.<br>Find jobs at companies who are using your favorite JS framework!</h2>
