@@ -51,7 +51,6 @@ module.exports = function (grunt) {
             expand: true,
             flatten: true,
             src: [
-              'src/CNAME',
               'src/**/*.jpg',
               'src/**/*.png',
               'src/*.ico',
