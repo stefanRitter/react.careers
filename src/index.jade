@@ -21,7 +21,7 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       
       .clear-both
       each data, title in companies
-        - var href="/companies/"+title.toLowerCase().replace(/ /g,"-")+".html"
+        - var href="/react.careers/companies/"+title.toLowerCase().replace(/ /g,"-")+".html"
         a.company(href=href)
           img(src=data.logo alt=title)
           span
