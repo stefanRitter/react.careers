@@ -52,6 +52,10 @@
     "url": "https://www.facebook.com/careers/",
     "logo": "/react.careers/facebook.png"
   },
+  "Findify": {
+    "url": "http://findify.io/careers/",
+    "logo": "/react.careers/findify.png"
+  },
   "Flipboard": {
     "url": "https://flipboard.com/careers/",
     "logo": "/react.careers/flipboard.png"
@@ -164,6 +168,10 @@
     "url": "http://www.salesforce.com/company/careers/",
     "logo": "/react.careers/salesforce.png"
   },
+  "Seed": {
+    "url": "https://seed.co/jobs/",
+    "logo": "/react.careers/seed.jpg"
+  },
   "Skill Hero": {
     "url": "https://skillhero.de/jobs/",
     "logo": "/react.careers/skill-hero.png"
@@ -211,6 +219,10 @@
   "Walmart": {
     "url": "https://jobs.walmart.com/us/jobs?page=1&tags=ecommerce",
     "logo": "/react.careers/walmart.png"
+  },
+  "vvdio": {
+    "url": "http://www.vvd.io/",
+    "logo": "/react.careers/vvdio.png"
   },
   "Webflow": {
     "url": "https://webflow.com/jobs/senior-front-end-developer",
