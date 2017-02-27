@@ -2,111 +2,111 @@
   "Airbnb": {
     "url": "https://www.airbnb.co.uk/careers",
     "moreinfo": "http://www.slideshare.net/spikebrehm/the-evolution-of-airbnbs-frontend",
-    "logo": "/airbnb.png"
+    "logo": "airbnb.png"
   },
   "Argos": {
     "url": "http://argos.careers/role-areas/technology",
-    "logo": "/argos.png"
+    "logo": "argos.png"
   },
   "BBC": {
     "url": "http://www.bbc.co.uk/careers/home",
-    "logo": "/bbc.png"
+    "logo": "bbc.png"
   },
   "Bolste": {
     "url": "http://careers.bolste.com",
-    "logo": "/bolste.png"
+    "logo": "bolste.png"
   },
   "BrandYourself": {
     "url": "https://brandyourself.com/info/about/jobs?gh_jid=221364",
-    "logo": "/brandyourself.png"
+    "logo": "brandyourself.png"
   },
   "Captain401": {
     "url": "http://captain401.com/careers",
-    "logo": "/captain401.png"
+    "logo": "captain401.png"
   },
   "Codecademy": {
     "url": "http://www.codecademy.com/about/jobs",
-    "logo": "/codecademy.png"
+    "logo": "codecademy.png"
   },
   "Concur": {
     "url": "https://www.concur.com/en-us/careers",
-    "logo": "/concur.png"
+    "logo": "concur.png"
   },
   "Conversocial": {
     "url": "http://www.conversocial.com/about-us/jobs",
-    "logo": "/conversocial.png"
+    "logo": "conversocial.png"
   },
   "Discovery": {
     "url": "https://careers-discovery.icims.com/jobs/13575/front-end-engineer/job",
-    "logo": "/discovery.png"
+    "logo": "discovery.png"
   },
   "eBay": {
     "url": "https://careers.ebayinc.com",
-    "logo": "/ebay.png"
+    "logo": "ebay.png"
   },
   "EyeEm": {
     "url": "http://eyeem.com/careers",
-    "logo": "/eyeem.png"
+    "logo": "eyeem.png"
   },
   "Facebook": {
     "url": "https://www.facebook.com/careers/",
-    "logo": "/facebook.png"
+    "logo": "facebook.png"
   },
   "Flipboard": {
     "url": "https://flipboard.com/careers/",
-    "logo": "/flipboard.png"
+    "logo": "flipboard.png"
   },
   "Gin Lane": {
     "url": "http://ginlane.com/contact",
-    "logo": "/ginlane.png"
+    "logo": "ginlane.png"
   },
   "GoGuardian": {
     "url": "https://www.goguardian.com/careers.html",
-    "logo": "/goguardian.png"
+    "logo": "goguardian.png"
   },
   "Habu": {
     "url": "http://habu.co/jobs",
-    "logo": "/habu.png"
+    "logo": "habu.png"
   },
   "Handshake": {
     "url": "https://joinhandshake.com/careers/",
-    "logo": "/handshake.png"
+    "logo": "handshake.png"
   },
   "Hipchat": {
     "url": "https://www.hipchat.com/jobs",
-    "logo": "/hipchat.png"
+    "logo": "hipchat.png"
   },
   "Holiday Extras": {
     "url": "http://join.holidayextras.co.uk/vacancies/",
-    "logo": "/holidayextras.png"
+    "logo": "holidayextras.png"
   },
   "Improbable.io": {
     "url": "http://improbable.io/life-at-improbable/",
-    "logo": "/improbable.png"
+    "logo": "improbable.png"
   },
   "Instagram": {
     "url": "https://instagram.com/about/jobs/",
-    "logo": "/instagram.png"
+    "logo": "instagram.png"
   },
   "Iodine": {
     "url": "https://angel.co/iodine/jobs",
-    "logo": "/iodine.png"
+    "logo": "iodine.png"
   },
   "Kahn Academy": {
     "url": "https://www.khanacademy.org/careers",
-    "logo": "/kahn-academy.png"
+    "logo": "kahn-academy.png"
   },
   "lyft": {
     "url": "https://www.lyft.com/jobs",
-    "logo": "/lyft.png"
+    "logo": "lyft.png"
   },
   "Massive Interactive": {
     "url": "http://www.linkedin.com/vsearch/j?page_num=1&locationType=Y&f_C=227781&trk=careers_promo_module_see_jobs",
-    "logo": "/massive-interactive.jpg"
+    "logo": "massive-interactive.jpg"
   },
   "Mendeley": {
     "url": "https://www.mendeley.com/careers/",
-    "logo": "/mendeley.png"
+    "logo": "mendeley.png"
   },
   "moneyhub": {
     "url":"http://www.momentumfinancialtechnology.com/category/jobs/",
@@ -118,110 +118,110 @@
   },
   "Netflix": {
     "url": "http://jobs.netflix.com/",
-    "logo": "/netflix.png"
+    "logo": "netflix.png"
   },
   "NFL": {
     "url": "https://recruiting.adp.com/srccar/public/RTI.home?c=1123141&d=External",
-    "logo": "/nfl.png"
+    "logo": "nfl.png"
   },
   "Nitrous": {
     "url": "https://www.nitrous.io/jobs/",
-    "logo": "/nitrous.png"
+    "logo": "nitrous.png"
   },
   "Paperless Post": {
     "url": "https://www.paperlesspost.com/jobs",
-    "logo": "/paperless-post.png"
+    "logo": "paperless-post.png"
   },
   "PayPal": {
     "url": "https://www.paypal.com/ph/cgi-bin/webscr?cmd=p/gen/jobs-outside",
-    "logo": "/paypal.png"
+    "logo": "paypal.png"
   },
   "Prempoint": {
     "url": "https://www.prempoint.com",
-    "logo": "/prempoint.png"
+    "logo": "prempoint.png"
   },
   "Procore": {
     "url": "http://www.procore.com/jobs/",
-    "logo": "/procore.png"
+    "logo": "procore.png"
   },
   "Qubit": {
     "url": "http://www.qubit.com/careers",
-    "logo": "/qubit.png"
+    "logo": "qubit.png"
   },
   "Reddit": {
     "url": "https://jobs.lever.co/reddit",
-    "logo": "/reddit.png"
+    "logo": "reddit.png"
   },
   "Red Badger": {
     "url": "http://red-badger.com/about-us/join-us/",
-    "logo": "/red-badger.png"
+    "logo": "red-badger.png"
   },
   "Redman Tech": {
     "url": "http://www.redmantech.com/about-us/careers/",
-    "logo": "/redman-tech.png"
+    "logo": "redman-tech.png"
   },
   "Salesforce": {
     "url": "http://www.salesforce.com/company/careers/",
-    "logo": "/salesforce.png"
+    "logo": "salesforce.png"
   },
   "Skill Hero": {
     "url": "https://skillhero.de/jobs/",
-    "logo": "/skill-hero.png"
+    "logo": "skill-hero.png"
   },
   "Social Tables": {
     "url": "https://www.socialtables.com/careers",
-    "logo": "/social-tables.png"
+    "logo": "social-tables.png"
   },
   "SpiceFactory": {
     "url": "http://spicefactory.co/careers/",
-    "logo": "/spicefactory.png"
+    "logo": "spicefactory.png"
   },
   "Sky": {
     "url": "http://searchskyjobs.com/careers/software-and-product-development-jobs/",
-    "logo": "/sky.png"
+    "logo": "sky.png"
   },
   "State": {
     "url": "http://jobs.state.com/",
-    "logo": "/state.png"
+    "logo": "state.png"
   },
   "Sticker Mule": {
     "url": "https://www.stickermule.com/jobs",
-    "logo": "/sticker-mule.png"
+    "logo": "sticker-mule.png"
   },
   "TechMagic": {
     "url": "http://www.techmagic.co/career",
-    "logo": "/techmagic.png"
+    "logo": "techmagic.png"
   },
   "Tesco": {
     "url": "http://www.tesco-careers.com/",
-    "logo": "/tesco.png"
+    "logo": "tesco.png"
   },
   "The NYTimes": {
     "url": "http://jobs.nytco.com/",
-    "logo": "/nyt.png"
+    "logo": "nyt.png"
   },
   "UBER": {
     "url": "https://www.uber.com/careers/",
-    "logo": "/uber.png"
+    "logo": "uber.png"
   },
   "X-Team": {
     "url": "https://x-team.com/frontend-developer/?utm_campaign=reactcareers",
-    "logo": "/xteam.jpg"
+    "logo": "xteam.jpg"
   },
   "Walmart": {
     "url": "https://jobs.walmart.com/us/jobs?page=1&tags=ecommerce",
-    "logo": "/walmart.png"
+    "logo": "walmart.png"
   },
   "Webflow": {
     "url": "https://webflow.com/jobs/senior-front-end-developer",
-    "logo": "/webflow.png"
+    "logo": "webflow.png"
   },
   "Yahoo": {
     "url": "https://careers.yahoo.com",
-    "logo": "/yahoo.png"
+    "logo": "yahoo.png"
   },
   "Zapier": {
     "url": "https://zapier.com/jobs/",
-    "logo": "/zapier.png"
+    "logo": "zapier.png"
   }
 }
