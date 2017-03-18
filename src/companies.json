@@ -1,8 +1,11 @@
 {
   "Airbnb": {
-    "url": "https://www.airbnb.co.uk/careers",
-    "moreinfo": "http://www.slideshare.net/spikebrehm/the-evolution-of-airbnbs-frontend",
+    "url": "https://www.airbnb.com/careers",
     "logo": "/react.careers/airbnb.png"
+  },
+  "Airtable": {
+    "url": "https://airtable.com/jobs",
+    "logo": "/react.careers/airtable.jpg"
   },
   "Argos": {
     "url": "http://argos.careers/role-areas/technology",
