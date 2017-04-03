@@ -55,6 +55,10 @@
     "url": "https://www.facebook.com/careers/",
     "logo": "/react.careers/facebook.png"
   },
+  "Farfetch": {
+    "url": "https://www.farfetch.com/careers",
+    "logo": "/react.careers/farfetch.png"
+  },
   "Findify": {
     "url": "http://findify.io/careers/",
     "logo": "/react.careers/findify.png"
