@@ -7,6 +7,10 @@
     "url": "https://airtable.com/jobs",
     "logo": "/react.careers/airtable.jpg"
   },
+  "AppSheet": {
+    "url": "https://angel.co/appsheet/jobs",
+    "logo": "/react.careers/appsheet.png"
+  },
   "Argos": {
     "url": "http://argos.careers/role-areas/technology",
     "logo": "/react.careers/argos.png"
