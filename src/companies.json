@@ -255,6 +255,10 @@
     "url": "http://jobs.nytco.com/",
     "logo": "/react.careers/nyt.png"
   },
+  "Trainline": {
+    "url": "http://www.thetrainlinejobs.com/",
+    "logo": "/react.careers/trainline.png"
+  },
   "UBER": {
     "url": "https://www.uber.com/careers/",
     "logo": "/react.careers/uber.png"
